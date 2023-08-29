@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Havit.EFCoreTests.Model
+namespace EnchantedCoder.EFCoreTests.Model
 {
 	public class Address
 	{

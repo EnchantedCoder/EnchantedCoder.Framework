@@ -2,7 +2,6 @@
 
 	<PropertyGroup>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Authors>HAVIT</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageIcon>logo.png</PackageIcon>
 		<!--<NoWarn>$(NoWarn);NU5104</NoWarn>-->
@@ -32,7 +31,7 @@
 	</PropertyGroup>
 	<!-- /Publish NuGet -->
 
-	<Target Name="HavitCheckPackageIsNotEmpty" BeforeTargets="GenerateNuspec" AfterTargets="_CalculateInputsOutputsForPack" Condition=" $(GeneratePackageOnBuild) == 'true' ">
+	<Target Name="EnchantedCoderCheckPackageIsNotEmpty" BeforeTargets="GenerateNuspec" AfterTargets="_CalculateInputsOutputsForPack" Condition=" $(GeneratePackageOnBuild) == 'true' ">
 		<!-- _BuildOutputInPackage - výstup buildu -->
 		<!-- _PackageFiles - content -->
 		<!-- Nereflektujeme zde _PackageFilesToExclude. -->
@@ -43,7 +42,7 @@
 		<Error Text="Generated nuget package is empty." Condition="( ($(CheckPackageIsNotEmpty) == 'true') And @(_BuildOutputInPackage->Count()) == 0) And (@(_PackageFiles->Count()) &lt;= 1)" />
 	</Target>
 
-	<Target Name="HavitCheckPackageVersionIsSet" BeforeTargets="GenerateNuspec" AfterTargets="_CalculateInputsOutputsForPack" Condition=" $(GeneratePackageOnBuild) == 'true' ">
+	<Target Name="EnchantedCoderCheckPackageVersionIsSet" BeforeTargets="GenerateNuspec" AfterTargets="_CalculateInputsOutputsForPack" Condition=" $(GeneratePackageOnBuild) == 'true' ">
 		<Error Text="Nuget package version not set." Condition="$(PackageVersion) == '$(VersionPrefix)'"  />
 	</Target>
 </Project>

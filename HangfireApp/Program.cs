@@ -1,14 +1,14 @@
-﻿using Hangfire;
+using Hangfire;
 using Hangfire.Console;
 using Hangfire.Console.Extensions;
 using Hangfire.SqlServer;
-using Havit.ApplicationInsights.DependencyCollector;
-using Havit.AspNetCore.ExceptionMonitoring.Services;
-using Havit.Diagnostics.Contracts;
-using Havit.Hangfire.Extensions.BackgroundJobs;
-using Havit.Hangfire.Extensions.Filters;
-using Havit.Hangfire.Extensions.RecurringJobs;
-using Havit.HangfireJobs.Jobs;
+using EnchantedCoder.ApplicationInsights.DependencyCollector;
+using EnchantedCoder.AspNetCore.ExceptionMonitoring.Services;
+using EnchantedCoder.Diagnostics.Contracts;
+using EnchantedCoder.Hangfire.Extensions.BackgroundJobs;
+using EnchantedCoder.Hangfire.Extensions.Filters;
+using EnchantedCoder.Hangfire.Extensions.RecurringJobs;
+using EnchantedCoder.HangfireJobs.Jobs;
 using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector;
 using Microsoft.Azure.WebJobs;
@@ -21,7 +21,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Havit.HangfireApp
+namespace EnchantedCoder.HangfireApp
 {
 	public static class Program
 	{
@@ -43,7 +43,7 @@ namespace Havit.HangfireApp
 					services.AddTransient<IJobTwo, JobTwo>();
 					services.AddTransient<IJobThree, JobThree>();
 
-					services.AddApplicationInsightsTelemetryWorkerService();					
+					services.AddApplicationInsightsTelemetryWorkerService();
 					services.AddApplicationInsightsTelemetryProcessor<IgnoreSucceededDependenciesWithNoParentIdProcessor>(); // ignorujeme infrastrukturní položky Hangfire (předpokládá použití ApplicationInsightAttribute níže)
 					services.Remove(services.Single(descriptor => descriptor.ImplementationType == typeof(PerformanceCollectorModule))); // odebereme hlášení PerformanceCounters
 

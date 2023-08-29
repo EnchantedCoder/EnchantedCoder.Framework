@@ -1,0 +1,162 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using EnchantedCoder.Diagnostics.Contracts;
+using EnchantedCoder.Services.FileStorage;
+
+namespace EnchantedCoder.Services.FileStorage
+{
+	/// <summary>
+	/// Úložiště souborů pro práci s embedded resources. Podporuje pouze čtení z embedded resources a ověření existence embedded resource.
+	/// </summary>
+	public class EmbeddedResourceStorageService : FileStorageServiceBase
+	{
+		private readonly Assembly resourceAssembly;
+		private readonly string rootNamespace;
+
+		/// <summary>
+		/// Konstruktor.
+		/// </summary>
+		public EmbeddedResourceStorageService(Assembly resourceAssembly, string rootNamespace)
+		{
+			Contract.Requires<ArgumentNullException>(resourceAssembly != null, nameof(resourceAssembly));
+			this.resourceAssembly = resourceAssembly;
+			this.rootNamespace = rootNamespace;
+		}
+
+		/// <summary>
+		/// Vrátí resource name, který bude dohledáván v assembly.
+		/// </summary>
+		private string GetResourceName(string fileName)
+		{
+			return String.IsNullOrEmpty(rootNamespace)
+				? fileName
+				: rootNamespace + "." + fileName;
+		}
+
+		/// <inheritdoc />
+		public override bool Exists(string fileName)
+		{
+			return resourceAssembly.GetManifestResourceInfo(GetResourceName(fileName)) != null;
+		}
+
+		/// <inheritdoc />
+		public override Task<bool> ExistsAsync(string fileName, CancellationToken cancellationToken = default)
+		{
+			return Task.FromResult(Exists(fileName)); // no async version
+		}
+
+		/// <inheritdoc />
+		protected override Stream PerformOpenRead(string fileName)
+		{
+			string resourceName = GetResourceName(fileName);
+			var result = resourceAssembly.GetManifestResourceStream(resourceName);
+			if (result == null)
+			{
+				throw new FileNotFoundException($"Embedded resource {resourceName} not found in the assembly {resourceAssembly.GetName().Name}.", fileName);
+			}
+			return result;
+		}
+
+		/// <inheritdoc />
+		protected override Task<Stream> PerformOpenReadAsync(string fileName, CancellationToken cancellationToken = default)
+		{
+			return Task.FromResult(OpenRead(fileName)); // no async version
+		}
+
+		/// <inheritdoc />
+		protected override void PerformReadToStream(string fileName, Stream stream)
+		{
+			using (Stream resourceStream = OpenRead(fileName))
+			{
+				resourceStream.CopyTo(stream);
+			}
+		}
+
+		/// <inheritdoc />
+		protected override async Task PerformReadToStreamAsync(string fileName, Stream stream, CancellationToken cancellationToken = default)
+		{
+			using (Stream resourceStream = OpenRead(fileName))
+			{
+				await resourceStream.CopyToAsync(stream, 81920 /* default */, cancellationToken).ConfigureAwait(false);
+			}
+		}
+
+		#region Not supported methods
+		/// <summary>
+		/// Vyhazuje <see cref="NotSupportedException"/>.
+		/// </summary>
+		protected override Stream PerformOpenCreate(string fileName, string contentType) => throw new NotSupportedException();
+
+		/// <summary>
+		/// Vyhazuje <see cref="NotSupportedException"/>.
+		/// </summary>
+		protected override Task<Stream> PerformOpenCreateAsync(string fileName, string contentType, CancellationToken cancellationToken = default) => throw new NotSupportedException();
+
+		/// <summary>
+		/// Vyhazuje <see cref="NotSupportedException"/>.
+		/// </summary>
+		public override void Delete(string fileName) => throw new NotSupportedException();
+
+		/// <summary>
+		/// Vyhazuje <see cref="NotSupportedException"/>.
+		/// </summary>
+		public override Task DeleteAsync(string fileName, CancellationToken cancellationToken = default) => throw new NotSupportedException();
+
+		/// <summary>
+		/// Vyhazuje <see cref="NotSupportedException"/>.
+		/// </summary>
+		public override IEnumerable<EnchantedCoder.Services.FileStorage.FileInfo> EnumerateFiles(string pattern = null) => throw new NotSupportedException();
+
+		/// <summary>
+		/// Vyhazuje <see cref="NotSupportedException"/>.
+		/// </summary>
+		public override IAsyncEnumerable<EnchantedCoder.Services.FileStorage.FileInfo> EnumerateFilesAsync(string pattern = null, CancellationToken cancellationToken = default) => throw new NotSupportedException();
+
+		/// <summary>
+		/// Vyhazuje <see cref="NotSupportedException"/>.
+		/// </summary>
+		public override DateTime? GetLastModifiedTimeUtc(string fileName) => throw new NotSupportedException();
+
+		/// <summary>
+		/// Vyhazuje <see cref="NotSupportedException"/>.
+		/// </summary>
+		public override Task<DateTime?> GetLastModifiedTimeUtcAsync(string fileName, CancellationToken cancellationToken = default) => throw new NotSupportedException();
+
+		/// <summary>
+		/// Vyhazuje <see cref="NotSupportedException"/>.
+		/// </summary>
+		protected override void PerformSave(string fileName, Stream fileContent, string contentType) => throw new NotSupportedException();
+
+		/// <summary>
+		/// Vyhazuje <see cref="NotSupportedException"/>.
+		/// </summary>
+		protected override Task PerformSaveAsync(string fileName, Stream fileContent, string contentType, CancellationToken cancellationToken = default) => throw new NotSupportedException();
+
+		/// <summary>
+		/// Vyhazuje <see cref="NotSupportedException"/>.
+		/// </summary>
+		protected override void PerformMove(string sourceFileName, string targetFileName) => throw new NotSupportedException();
+
+		/// <summary>
+		/// Vyhazuje <see cref="NotSupportedException"/>.
+		/// </summary>
+		protected override Task PerformMoveAsync(string sourceFileName, string targetFileName, CancellationToken cancellationToken) => throw new NotSupportedException();
+
+		/// <summary>
+		/// Vyhazuje <see cref="NotSupportedException"/>.
+		/// </summary>
+		protected override string GetContentType(string fileName) => throw new NotImplementedException();
+
+		/// <summary>
+		/// Vyhazuje <see cref="NotSupportedException"/>.
+		/// </summary>
+		protected override ValueTask<string> GetContentTypeAsync(string fileName, CancellationToken cancellationToken) => throw new NotImplementedException();
+		#endregion
+	}
+}

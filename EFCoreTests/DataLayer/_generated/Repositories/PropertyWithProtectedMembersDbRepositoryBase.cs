@@ -5,20 +5,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using Havit.Data.EntityFrameworkCore;
-using Havit.Data.EntityFrameworkCore.Patterns.Caching;
-using Havit.Data.EntityFrameworkCore.Patterns.Repositories;
-using Havit.Data.EntityFrameworkCore.Patterns.SoftDeletes;
-using Havit.Data.Patterns.DataEntries;
-using Havit.Data.Patterns.DataLoaders;
-using Havit.Data.Patterns.Infrastructure;
+using EnchantedCoder.Data.EntityFrameworkCore;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Repositories;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.SoftDeletes;
+using EnchantedCoder.Data.Patterns.DataEntries;
+using EnchantedCoder.Data.Patterns.DataLoaders;
+using EnchantedCoder.Data.Patterns.Infrastructure;
 
-namespace Havit.EFCoreTests.DataLayer.Repositories;
+namespace EnchantedCoder.EFCoreTests.DataLayer.Repositories;
 
-[System.CodeDom.Compiler.GeneratedCode("Havit.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
-public abstract class PropertyWithProtectedMembersDbRepositoryBase : DbRepository<Havit.EFCoreTests.Model.PropertyWithProtectedMembers>
+[System.CodeDom.Compiler.GeneratedCode("EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
+public abstract class PropertyWithProtectedMembersDbRepositoryBase : DbRepository<EnchantedCoder.EFCoreTests.Model.PropertyWithProtectedMembers>
 {
-	protected PropertyWithProtectedMembersDbRepositoryBase(IDbContext dbContext, Havit.EFCoreTests.DataLayer.DataSources.IPropertyWithProtectedMembersDataSource dataSource, IEntityKeyAccessor<Havit.EFCoreTests.Model.PropertyWithProtectedMembers, int> entityKeyAccessor, IDataLoader dataLoader, ISoftDeleteManager softDeleteManager, IEntityCacheManager entityCacheManager)
+	protected PropertyWithProtectedMembersDbRepositoryBase(IDbContext dbContext, EnchantedCoder.EFCoreTests.DataLayer.DataSources.IPropertyWithProtectedMembersDataSource dataSource, IEntityKeyAccessor<EnchantedCoder.EFCoreTests.Model.PropertyWithProtectedMembers, int> entityKeyAccessor, IDataLoader dataLoader, ISoftDeleteManager softDeleteManager, IEntityCacheManager entityCacheManager)
 		: base(dbContext, dataSource, entityKeyAccessor, dataLoader, softDeleteManager, entityCacheManager)
 	{
 	}

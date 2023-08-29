@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0</TargetFrameworks>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="EnchantedCoder.Data.Patterns.Tests" />
+	</ItemGroup>
+
+	<!-- NuGet -->
+	<Import Project="../NuGet.targets" />
+	<PropertyGroup>
+		<PackageVersion>2.1.23</PackageVersion>
+		<Description>Enchanted Coder .NET Extensions - Data Patterns</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EnchantedCoder.Model\EnchantedCoder.Model.csproj" />
+		<ProjectReference Include="..\EnchantedCoder.Services\EnchantedCoder.Services.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ConfigureAwaitChecker.Analyzer" Version="5.0.0.1" PrivateAssets="all" />
+		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+	</ItemGroup>
+
+</Project>

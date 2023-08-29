@@ -82,8 +82,6 @@ dotnet_diagnostic.IDE1006.severity = warning # Naming Styles
 
 
 #### FxCop analyzers options ####
-# Adopted from:
-# \\topol.havit.local\Library\VS2019\CodeAnalysis\HavitMain.ruleset
 
 dotnet_diagnostic.CA1010.severity=warning
 dotnet_diagnostic.CA1012.severity=warning

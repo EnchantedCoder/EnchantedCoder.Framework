@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Havit.EFCoreTests.Entity.Migrations
+namespace EnchantedCoder.EFCoreTests.Entity.Migrations
 {
 	public partial class PersonName : Migration
 	{

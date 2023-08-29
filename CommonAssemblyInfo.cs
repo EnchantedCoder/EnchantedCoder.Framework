@@ -2,9 +2,9 @@
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyCompany("HAVIT, s.r.o.")]
-[assembly: AssemblyProduct("HAVIT .NET Framework Extensions")]
-[assembly: AssemblyCopyright("Copyright HAVIT, s.r.o., 2019")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Enchanted Coder .NET Extensions")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

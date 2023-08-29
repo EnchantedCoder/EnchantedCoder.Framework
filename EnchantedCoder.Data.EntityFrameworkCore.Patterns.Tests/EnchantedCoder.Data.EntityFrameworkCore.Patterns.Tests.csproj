@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net7.0</TargetFramework>
+	<!-- EF1001 je hlášen při použití třídy z namespace obsahující EntityFrameworkCore a končící na Internal, to jsou bohužel i třídy v EnchantedCoder.Data.EntityFrameworkCore.Patterns.*.Internal, které způsobují false positives. -->
+	<NoWarn>($NoWarn);EF1001</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.2" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
+	<PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+	<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
+	<PackageReference Include="Moq" Version="4.18.2" />
+	<PackageReference Include="MSTest.TestAdapter" Version="3.0.1" />
+	<PackageReference Include="MSTest.TestFramework" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<ProjectReference Include="..\EnchantedCoder.Data.EntityFrameworkCore.Patterns\EnchantedCoder.Data.EntityFrameworkCore.Patterns.csproj" />
+	<ProjectReference Include="..\EnchantedCoder.Data.EntityFrameworkCore.TestHelpers\EnchantedCoder.Data.EntityFrameworkCore.TestHelpers.csproj" />
+	<ProjectReference Include="..\EnchantedCoder.Services.TestHelpers\EnchantedCoder.Services.TestHelpers.csproj" />
+	<ProjectReference Include="..\EnchantedCoder.Services\EnchantedCoder.Services.csproj" />
+  </ItemGroup>
+
+</Project>

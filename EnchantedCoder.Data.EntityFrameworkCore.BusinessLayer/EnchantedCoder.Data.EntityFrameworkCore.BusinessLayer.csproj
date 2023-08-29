@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>($NoWarn);1701;1702;1591;EF1001</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer.Tests" />
+	</ItemGroup>
+
+	<!-- NuGet -->
+	<Import Project="../NuGet.targets" />
+	<PropertyGroup>
+		<PackageVersion>2.7.1</PackageVersion>
+		<Description>Enchanted Coder .NET Extensions - Database schema and data seeding for application with Enchanted Coder Business Layer</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="[7.0.2,8)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer.Abstractions\EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer.Abstractions.csproj" />
+		<ProjectReference Include="..\EnchantedCoder.Data.EntityFrameworkCore.Migrations\EnchantedCoder.Data.EntityFrameworkCore.Migrations.csproj" />
+		<ProjectReference Include="..\EnchantedCoder.Data.EntityFrameworkCore\EnchantedCoder.Data.EntityFrameworkCore.csproj" />
+		<ProjectReference Include="..\EnchantedCoder.Services\EnchantedCoder.Services.csproj" />
+	</ItemGroup>
+
+</Project>

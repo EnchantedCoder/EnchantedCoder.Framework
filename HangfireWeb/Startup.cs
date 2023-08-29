@@ -1,7 +1,7 @@
 using Hangfire;
 using Hangfire.Dashboard;
-using Havit.HangfireApp.Infrastructure.Security;
-using Havit.HangfireWeb.Infrastructure.ConfigurationExtensions;
+using EnchantedCoder.HangfireApp.Infrastructure.Security;
+using EnchantedCoder.HangfireWeb.Infrastructure.ConfigurationExtensions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -66,7 +66,7 @@ namespace HangfireWeb
                     DisplayStorageConnectionString = false,
                     DashboardTitle = "NewProjectTemplate - Jobs",
                     StatsPollingInterval = 60_000, // once a minute
-                    DisplayNameFunc = (_, job) => Havit.Hangfire.Extensions.Helpers.JobNameHelper.TryGetSimpleName(job, out string simpleName)
+                    DisplayNameFunc = (_, job) => EnchantedCoder.Hangfire.Extensions.Helpers.JobNameHelper.TryGetSimpleName(job, out string simpleName)
                         ? simpleName
                         : job.ToString()
                 });

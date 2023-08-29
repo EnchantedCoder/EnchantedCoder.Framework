@@ -6,24 +6,24 @@
   Případně tento nápad revertujeme.
   (Můžeme zvolit i jiné technické řešení, např. nastavit PackageVersion zde podle projektu, nemusíme pak tvořit spoustu proměnných.)
   -->
-	
+
   <!-- Core Libraries -->
   <PropertyGroup>
-	  <HavitCore_PackageVersion>2.0.26</HavitCore_PackageVersion>
-	  <HavitData_PackageVersion>2.0.30</HavitData_PackageVersion>
-	  <HavitDataSqlClientAzure_PackageVersion>2.0.5</HavitDataSqlClientAzure_PackageVersion>
-	  <HavitDrawing_PackageVersion>2.0.30</HavitDrawing_PackageVersion>
-	  <HavitGoogleAnalytics_PackageVersion>2.0.30</HavitGoogleAnalytics_PackageVersion>
-	  <HavitGoPay_PackageVersion>2.0.30</HavitGoPay_PackageVersion>
-	  <HavitPayMuzo_PackageVersion>2.0.30</HavitPayMuzo_PackageVersion>
-	  <HavitPayPal_PackageVersion>2.0.30</HavitPayPal_PackageVersion>
-	  <HavitServices_PackageVersion>2.0.37</HavitServices_PackageVersion>
-	  <HavitServicesAzure_PackageVersion>2.0.22</HavitServicesAzure_PackageVersion>
-	  <HavitServicesRedis_PackageVersion>2.0.4</HavitServicesRedis_PackageVersion>
-	  <HavitServicesSftp_PackageVersion>2.0.5</HavitServicesSftp_PackageVersion>
-	  <HavitWeb_PackageVersion>2.0.37</HavitWeb_PackageVersion>
-	  <HavitWebBootstrap_PackageVersion>2.0.36</HavitWebBootstrap_PackageVersion>
-	  <HavitWebClientContent_PackageVersion>2.0.36</HavitWebClientContent_PackageVersion>
+	  <EnchantedCoderCore_PackageVersion>2.0.26</EnchantedCoderCore_PackageVersion>
+	  <EnchantedCoderData_PackageVersion>2.0.30</EnchantedCoderData_PackageVersion>
+	  <EnchantedCoderDataSqlClientAzure_PackageVersion>2.0.5</EnchantedCoderDataSqlClientAzure_PackageVersion>
+	  <EnchantedCoderDrawing_PackageVersion>2.0.30</EnchantedCoderDrawing_PackageVersion>
+	  <EnchantedCoderGoogleAnalytics_PackageVersion>2.0.30</EnchantedCoderGoogleAnalytics_PackageVersion>
+	  <EnchantedCoderGoPay_PackageVersion>2.0.30</EnchantedCoderGoPay_PackageVersion>
+	  <EnchantedCoderPayMuzo_PackageVersion>2.0.30</EnchantedCoderPayMuzo_PackageVersion>
+	  <EnchantedCoderPayPal_PackageVersion>2.0.30</EnchantedCoderPayPal_PackageVersion>
+	  <EnchantedCoderServices_PackageVersion>2.0.37</EnchantedCoderServices_PackageVersion>
+	  <EnchantedCoderServicesAzure_PackageVersion>2.0.22</EnchantedCoderServicesAzure_PackageVersion>
+	  <EnchantedCoderServicesRedis_PackageVersion>2.0.4</EnchantedCoderServicesRedis_PackageVersion>
+	  <EnchantedCoderServicesSftp_PackageVersion>2.0.5</EnchantedCoderServicesSftp_PackageVersion>
+	  <EnchantedCoderWeb_PackageVersion>2.0.37</EnchantedCoderWeb_PackageVersion>
+	  <EnchantedCoderWebBootstrap_PackageVersion>2.0.36</EnchantedCoderWebBootstrap_PackageVersion>
+	  <EnchantedCoderWebClientContent_PackageVersion>2.0.36</EnchantedCoderWebClientContent_PackageVersion>
   </PropertyGroup>
 
 </Project>

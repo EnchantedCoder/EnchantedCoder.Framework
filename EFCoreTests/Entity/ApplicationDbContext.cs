@@ -1,12 +1,12 @@
 ﻿using System;
-using Havit.Data.EntityFrameworkCore;
-using Havit.EFCoreTests.Model;
+using EnchantedCoder.Data.EntityFrameworkCore;
+using EnchantedCoder.EFCoreTests.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
-namespace Havit.EFCoreTests.Entity
+namespace EnchantedCoder.EFCoreTests.Entity
 {
-	public class ApplicationDbContext : Havit.Data.EntityFrameworkCore.DbContext
+	public class ApplicationDbContext : EnchantedCoder.Data.EntityFrameworkCore.DbContext
 	{
 		/// <summary>
 		/// Konstruktor.
@@ -21,7 +21,7 @@ namespace Havit.EFCoreTests.Entity
 		{
 			base.CustomizeModelCreating(modelBuilder);
 
-			modelBuilder.RegisterModelFromAssembly(typeof(Havit.EFCoreTests.Model.Person).Assembly);
+			modelBuilder.RegisterModelFromAssembly(typeof(EnchantedCoder.EFCoreTests.Model.Person).Assembly);
 			modelBuilder.ApplyConfigurationsFromAssembly(this.GetType().Assembly);
 		}
 	}

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Havit.HangfireJobs.Jobs
+namespace EnchantedCoder.HangfireJobs.Jobs
 {
     public class JobThree : IJobThree
     {

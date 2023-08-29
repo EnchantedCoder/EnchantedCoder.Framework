@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <AssemblyName>Havit.EFCoreTests.Model</AssemblyName>
-    <RootNamespace>Havit.EFCoreTests.Model</RootNamespace>
+    <AssemblyName>EnchantedCoder.EFCoreTests.Model</AssemblyName>
+    <RootNamespace>EnchantedCoder.EFCoreTests.Model</RootNamespace>
 	<ImplicitUsings>true</ImplicitUsings>
   </PropertyGroup>
 
@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Havit.Data.EntityFrameworkCore.Abstractions\Havit.Data.EntityFrameworkCore.Abstractions.csproj" />
-    <ProjectReference Include="..\..\Havit.Model\Havit.Model.csproj" />
+    <ProjectReference Include="..\..\EnchantedCoder.Data.EntityFrameworkCore.Abstractions\EnchantedCoder.Data.EntityFrameworkCore.Abstractions.csproj" />
+    <ProjectReference Include="..\..\EnchantedCoder.Model\EnchantedCoder.Model.csproj" />
   </ItemGroup>
 
 </Project>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
 
-namespace Havit.EFCoreTests.Model
+namespace EnchantedCoder.EFCoreTests.Model
 {
 	public class User
 	{

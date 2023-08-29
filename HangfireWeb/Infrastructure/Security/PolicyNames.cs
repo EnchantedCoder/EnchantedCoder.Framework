@@ -1,4 +1,4 @@
-﻿namespace Havit.HangfireApp.Infrastructure.Security
+﻿namespace EnchantedCoder.HangfireApp.Infrastructure.Security
 {
     public static class PolicyNames
     {

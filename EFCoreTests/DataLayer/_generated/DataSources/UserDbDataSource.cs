@@ -5,14 +5,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using Havit.Data.EntityFrameworkCore;
-using Havit.Data.EntityFrameworkCore.Patterns.DataSources;
-using Havit.Data.EntityFrameworkCore.Patterns.SoftDeletes;
+using EnchantedCoder.Data.EntityFrameworkCore;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataSources;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.SoftDeletes;
 
-namespace Havit.EFCoreTests.DataLayer.DataSources;
+namespace EnchantedCoder.EFCoreTests.DataLayer.DataSources;
 
-[System.CodeDom.Compiler.GeneratedCode("Havit.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
-public partial class UserDbDataSource : DbDataSource<Havit.EFCoreTests.Model.User>, IUserDataSource
+[System.CodeDom.Compiler.GeneratedCode("EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
+public partial class UserDbDataSource : DbDataSource<EnchantedCoder.EFCoreTests.Model.User>, IUserDataSource
 {
 	public UserDbDataSource(IDbContext dbContext, ISoftDeleteManager softDeleteManager)
 		: base(dbContext, softDeleteManager)

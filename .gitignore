@@ -261,8 +261,8 @@ Web/.vscode/launch.json
 /WebAPI/App_Data
 
 /Sandcastle/doc
-/Havit.Web/Bootstrap/Content/js/ModalExtension.js
-/WebApplicationTest/Scripts/Havit.Web.Bootstrap/*.js
-/WebApplicationTest/Content/Havit.Web.ClientContent/*.css
-/WebApplicationTest/Content/Havit.Web.ClientContent/*.png
-/WebApplicationTest/Scripts/Havit.Web.ClientContent/*.js
+/EnchantedCoder.Web/Bootstrap/Content/js/ModalExtension.js
+/WebApplicationTest/Scripts/EnchantedCoder.Web.Bootstrap/*.js
+/WebApplicationTest/Content/EnchantedCoder.Web.ClientContent/*.css
+/WebApplicationTest/Content/EnchantedCoder.Web.ClientContent/*.png
+/WebApplicationTest/Scripts/EnchantedCoder.Web.ClientContent/*.js

@@ -2,15 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <AssemblyName>Havit.EFCoreTests.DataLayer</AssemblyName>
-    <RootNamespace>Havit.EFCoreTests.DataLayer</RootNamespace>
+    <AssemblyName>EnchantedCoder.EFCoreTests.DataLayer</AssemblyName>
+    <RootNamespace>EnchantedCoder.EFCoreTests.DataLayer</RootNamespace>
 	<CopyLocalLockFileAssemblies>True</CopyLocalLockFileAssemblies>
 	<ImplicitUsings>true</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Havit.Data.EntityFrameworkCore.CodeGenerator\Havit.Data.EntityFrameworkCore.CodeGenerator.csproj" />
-    <ProjectReference Include="..\..\Havit.Data.EntityFrameworkCore.Patterns\Havit.Data.EntityFrameworkCore.Patterns.csproj" />
+    <ProjectReference Include="..\..\EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator\EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator.csproj" />
+    <ProjectReference Include="..\..\EnchantedCoder.Data.EntityFrameworkCore.Patterns\EnchantedCoder.Data.EntityFrameworkCore.Patterns.csproj" />
     <ProjectReference Include="..\Entity\Entity.csproj" />
     <ProjectReference Include="..\Model\Model.csproj" />
   </ItemGroup>

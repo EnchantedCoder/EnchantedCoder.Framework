@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;net7.0</TargetFrameworks>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<RootNamespace>EnchantedCoder</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="EnchantedCoder.Core.Tests" />
+	</ItemGroup>
+
+	<!-- NuGet -->
+	<Import Project="../NuGet.targets" />
+	<PropertyGroup>
+		<PackageVersion>$(EnchantedCoderCore_PackageVersion)</PackageVersion>
+		<Description>Enchanted Coder .NET Extensions - Basic Class Library</Description>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="ConfigureAwaitChecker.Analyzer" Version="5.0.0.1" PrivateAssets="all" />
+	</ItemGroup>
+
+</Project>

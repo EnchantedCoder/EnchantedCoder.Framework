@@ -1,0 +1,17 @@
+﻿using EnchantedCoder.Extensions.DependencyInjection.Abstractions;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EnchantedCoder.Extensions.DependencyInjection.Tests.Infrastructure
+{
+	/// <summary>
+	/// Implementuje jeden interface - IService.
+	/// </summary>
+	[Service(Profile = nameof(MyGenericService<object, object>))]
+	public class MyGenericService<TA, TB> : IGenericService<TA, TB>
+	{
+	}
+}

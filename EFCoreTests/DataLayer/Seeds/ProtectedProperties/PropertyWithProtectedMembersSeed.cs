@@ -1,10 +1,10 @@
-﻿using Havit.Data.Patterns.DataSeeds;
-using Havit.EFCoreTests.Model;
+﻿using EnchantedCoder.Data.Patterns.DataSeeds;
+using EnchantedCoder.EFCoreTests.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Havit.EFCoreTests.DataLayer.Seeds.ProtectedProperties
+namespace EnchantedCoder.EFCoreTests.DataLayer.Seeds.ProtectedProperties
 {
 	public class PropertyWithProtectedMembersSeed : DataSeed<ProtectedPropertiesProfile>
 	{

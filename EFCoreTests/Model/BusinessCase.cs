@@ -1,9 +1,9 @@
-﻿using Havit.Data.EntityFrameworkCore.Attributes;
+﻿using EnchantedCoder.Data.EntityFrameworkCore.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Havit.EFCoreTests.Model
+namespace EnchantedCoder.EFCoreTests.Model
 {
 	[Cache]
 	public class BusinessCase

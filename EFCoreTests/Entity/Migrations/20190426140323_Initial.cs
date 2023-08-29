@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Havit.EFCoreTests.Entity.Migrations
+namespace EnchantedCoder.EFCoreTests.Entity.Migrations
 {
 	public partial class Initial : Migration
 	{

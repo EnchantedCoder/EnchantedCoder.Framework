@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="EnchantedCoder.Data.EntityFrameworkCore.Tests" />
+	</ItemGroup>
+
+	<!-- NuGet -->
+	<Import Project="../NuGet.targets" />
+	<PropertyGroup>
+		<PackageVersion>2.7.2</PackageVersion>
+		<Description>Enchanted Coder .NET Extensions - Entity Framework Core Extensions</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ConfigureAwaitChecker.Analyzer" Version="5.0.0.1" PrivateAssets="all" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="[7.0.2,8)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EnchantedCoder.Core\EnchantedCoder.Core.csproj" />
+		<ProjectReference Include="..\EnchantedCoder.Data.EntityFrameworkCore.Abstractions\EnchantedCoder.Data.EntityFrameworkCore.Abstractions.csproj" />
+		<ProjectReference Include="..\EnchantedCoder.Model\EnchantedCoder.Model.csproj" />
+	</ItemGroup>
+
+</Project>

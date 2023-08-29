@@ -2,8 +2,8 @@
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
-		<AssemblyName>Havit.HangfireJobs</AssemblyName>
-		<RootNamespace>Havit.HangfireJobs</RootNamespace>
+		<AssemblyName>EnchantedCoder.HangfireJobs</AssemblyName>
+		<RootNamespace>EnchantedCoder.HangfireJobs</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>

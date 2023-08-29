@@ -5,20 +5,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using Havit.Data.EntityFrameworkCore;
-using Havit.Data.EntityFrameworkCore.Patterns.Caching;
-using Havit.Data.EntityFrameworkCore.Patterns.Repositories;
-using Havit.Data.EntityFrameworkCore.Patterns.SoftDeletes;
-using Havit.Data.Patterns.DataEntries;
-using Havit.Data.Patterns.DataLoaders;
-using Havit.Data.Patterns.Infrastructure;
+using EnchantedCoder.Data.EntityFrameworkCore;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Repositories;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.SoftDeletes;
+using EnchantedCoder.Data.Patterns.DataEntries;
+using EnchantedCoder.Data.Patterns.DataLoaders;
+using EnchantedCoder.Data.Patterns.Infrastructure;
 
-namespace Havit.EFCoreTests.DataLayer.Repositories;
+namespace EnchantedCoder.EFCoreTests.DataLayer.Repositories;
 
-[System.CodeDom.Compiler.GeneratedCode("Havit.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
+[System.CodeDom.Compiler.GeneratedCode("EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
 public partial class PersonDbRepository : PersonDbRepositoryBase, IPersonRepository
 {
-	public PersonDbRepository(IDbContext dbContext, Havit.EFCoreTests.DataLayer.DataSources.IPersonDataSource dataSource, IEntityKeyAccessor<Havit.EFCoreTests.Model.Person, int> entityKeyAccessor, IDataLoader dataLoader, ISoftDeleteManager softDeleteManager, IEntityCacheManager entityCacheManager)
+	public PersonDbRepository(IDbContext dbContext, EnchantedCoder.EFCoreTests.DataLayer.DataSources.IPersonDataSource dataSource, IEntityKeyAccessor<EnchantedCoder.EFCoreTests.Model.Person, int> entityKeyAccessor, IDataLoader dataLoader, ISoftDeleteManager softDeleteManager, IEntityCacheManager entityCacheManager)
 		: base(dbContext, dataSource, entityKeyAccessor, dataLoader, softDeleteManager, entityCacheManager)
 	{
 	}

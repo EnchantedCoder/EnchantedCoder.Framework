@@ -1,15 +1,15 @@
-﻿using Havit.Data.EntityFrameworkCore.Patterns.Lookups;
-using Havit.Data.EntityFrameworkCore.Patterns.SoftDeletes;
-using Havit.Data.Patterns.DataSources;
-using Havit.Data.Patterns.Infrastructure;
-using Havit.Data.Patterns.Repositories;
-using Havit.EFCoreTests.Model;
+﻿using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Lookups;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.SoftDeletes;
+using EnchantedCoder.Data.Patterns.DataSources;
+using EnchantedCoder.Data.Patterns.Infrastructure;
+using EnchantedCoder.Data.Patterns.Repositories;
+using EnchantedCoder.EFCoreTests.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace Havit.EFCoreTests.DataLayer.Lookups
+namespace EnchantedCoder.EFCoreTests.DataLayer.Lookups
 {
 	public class UserLookupService : LookupServiceBase<object, User>, IUserLookupService
 	{

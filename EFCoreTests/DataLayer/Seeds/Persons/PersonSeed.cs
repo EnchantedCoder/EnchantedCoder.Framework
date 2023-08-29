@@ -1,12 +1,12 @@
-﻿using Havit.Data.Patterns.DataSeeds;
-using Havit.EFCoreTests.Model;
+﻿using EnchantedCoder.Data.Patterns.DataSeeds;
+using EnchantedCoder.EFCoreTests.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Havit.EFCoreTests.DataLayer.Seeds.Persons
+namespace EnchantedCoder.EFCoreTests.DataLayer.Seeds.Persons
 {
 	public class PersonSeed : DataSeed<PersonsProfile>
 	{

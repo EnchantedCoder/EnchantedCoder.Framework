@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0</TargetFrameworks>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<!-- NuGet -->
+	<Import Project="../NuGet.targets" />
+	<PropertyGroup>
+		<PackageVersion>$(EnchantedCoderServicesRedis_PackageVersion)</PackageVersion>
+		<Description>Enchanted Coder .NET Extensions - Redis Services</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="StackExchange.Redis" Version="2.2.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EnchantedCoder.Services\EnchantedCoder.Services.csproj" />
+	</ItemGroup>
+
+</Project>

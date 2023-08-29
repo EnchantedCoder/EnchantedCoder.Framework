@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Havit.HangfireJobs.Jobs
+namespace EnchantedCoder.HangfireJobs.Jobs
 {
     public class JobOne : IJobOne
     {
@@ -22,7 +22,7 @@ namespace Havit.HangfireJobs.Jobs
                 logger.LogInformation(this.GetType().Name + ": " + i);
                 //Console.WriteLine(this.GetType().Name + ": " + i);
                 await httpClient.GetAsync("/", cancellationToken);
-                //using (var connection = new SqlConnection("Data Source=sqldev.havit.local;Initial Catalog=HavitBusinessLayerTest;User Id=development;Password=development;"))
+                //using (var connection = new SqlConnection("Data Source=sqldev.havit.local;Initial Catalog=EnchantedCoderBusinessLayerTest;User Id=development;Password=development;"))
                 //{
                 //    connection.Open();
                 //    var cmd = connection.CreateCommand();

@@ -1,12 +1,10 @@
 <Project>
 
   <PropertyGroup>
-	<Company>HAVIT, s.r.o.</Company>
-	<Copyright>Copyright HAVIT, s.r.o., 2022</Copyright>
 	<VersionPrefix>2.0.0</VersionPrefix>
 	<AssemblyVersion>2.0.0.0</AssemblyVersion>
-	<Product>HAVIT .NET Framework Extensions</Product>
-	<AssemblyTitle>HAVIT .NET Framework Extensions</AssemblyTitle>
+	<Product>Enchanted Coder .NET Extensions</Product>
+	<AssemblyTitle>Enchanted Coder .NET Extensions</AssemblyTitle>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -14,5 +12,5 @@
   </PropertyGroup>
 
   <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" Condition="Exists($([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../')))"/>
-	
+
 </Project>

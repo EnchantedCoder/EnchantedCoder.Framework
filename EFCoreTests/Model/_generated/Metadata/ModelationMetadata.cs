@@ -5,9 +5,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Havit.EFCoreTests.Model.Metadata;
+namespace EnchantedCoder.EFCoreTests.Model.Metadata;
 
-[System.CodeDom.Compiler.GeneratedCode("Havit.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
+[System.CodeDom.Compiler.GeneratedCode("EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
 public static class ModelationMetadata
 {
 }

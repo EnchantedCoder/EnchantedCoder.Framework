@@ -5,11 +5,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using Havit.Data.Patterns.Repositories;
+using EnchantedCoder.Data.Patterns.Repositories;
 
-namespace Havit.EFCoreTests.DataLayer.Repositories;
+namespace EnchantedCoder.EFCoreTests.DataLayer.Repositories;
 
-[System.CodeDom.Compiler.GeneratedCode("Havit.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
-public partial interface IUserRepository : IRepository<Havit.EFCoreTests.Model.User>
+[System.CodeDom.Compiler.GeneratedCode("EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
+public partial interface IUserRepository : IRepository<EnchantedCoder.EFCoreTests.Model.User>
 {
 }

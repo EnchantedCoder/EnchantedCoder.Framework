@@ -2,8 +2,8 @@
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
-		<AssemblyName>Havit.HangfireApp</AssemblyName>
-		<RootNamespace>Havit.HangfireApp</RootNamespace>
+		<AssemblyName>EnchantedCoder.HangfireApp</AssemblyName>
+		<RootNamespace>EnchantedCoder.HangfireApp</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -15,7 +15,7 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\HangfireJobs\HangfireJobs.csproj" />
-	  <ProjectReference Include="..\Havit.Hangfire.Extensions\Havit.Hangfire.Extensions.csproj" />
+	  <ProjectReference Include="..\EnchantedCoder.Hangfire.Extensions\EnchantedCoder.Hangfire.Extensions.csproj" />
 	</ItemGroup>
 
 </Project>

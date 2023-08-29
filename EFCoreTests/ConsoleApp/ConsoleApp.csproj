@@ -3,8 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-    <AssemblyName>Havit.EFCoreTests.ConsoleApp</AssemblyName>
-    <RootNamespace>Havit.EFCoreTests.ConsoleApp</RootNamespace>
+    <AssemblyName>EnchantedCoder.EFCoreTests.ConsoleApp</AssemblyName>
+    <RootNamespace>EnchantedCoder.EFCoreTests.ConsoleApp</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Havit.Data.Patterns\Havit.Data.Patterns.csproj" />
+    <ProjectReference Include="..\..\EnchantedCoder.Data.Patterns\EnchantedCoder.Data.Patterns.csproj" />
     <ProjectReference Include="..\DataLayer\DataLayer.csproj" />
     <ProjectReference Include="..\Model\Model.csproj" />
   </ItemGroup>

@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+
+    <!-- Unit testy používají dokumentaci projektu -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <NoWarn>$(NoWarn);1701;1702;CS1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.0.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer.Abstractions\EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer.Abstractions.csproj" />
+    <ProjectReference Include="..\EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer\EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer.csproj" />
+    <ProjectReference Include="..\EnchantedCoder.Data.EntityFrameworkCore.Migrations.TestHelpers\EnchantedCoder.Data.EntityFrameworkCore.Migrations.TestHelpers.csproj" />
+  </ItemGroup>
+
+</Project>

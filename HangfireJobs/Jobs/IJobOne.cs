@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Havit.HangfireJobs.Jobs
+namespace EnchantedCoder.HangfireJobs.Jobs
 {
     public interface IJobOne : IRunnableJob
     {

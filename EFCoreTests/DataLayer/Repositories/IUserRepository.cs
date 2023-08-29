@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Havit.Data.Patterns.Repositories;
-using Havit.EFCoreTests.Model;
+using EnchantedCoder.Data.Patterns.Repositories;
+using EnchantedCoder.EFCoreTests.Model;
 
-namespace Havit.EFCoreTests.DataLayer.Repositories
+namespace EnchantedCoder.EFCoreTests.DataLayer.Repositories
 {
 	public partial interface IUserRepository
 	{

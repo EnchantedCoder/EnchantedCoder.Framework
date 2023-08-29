@@ -1,6 +1,6 @@
-﻿using Havit.EFCoreTests.Model;
+﻿using EnchantedCoder.EFCoreTests.Model;
 
-namespace Havit.EFCoreTests.DataLayer.Lookups
+namespace EnchantedCoder.EFCoreTests.DataLayer.Lookups
 {
 	public interface IUserLookupService
 	{

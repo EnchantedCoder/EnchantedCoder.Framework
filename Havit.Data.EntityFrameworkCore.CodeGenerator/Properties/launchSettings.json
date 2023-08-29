@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "Havit.Data.EntityFrameworkCore.CodeGenerator": {
-      "commandName": "Project",
-      "workingDirectory": "D:\\Dev\\002.HFW-HavitFramework\\EFCoreTests"
-    }
-  }
-}

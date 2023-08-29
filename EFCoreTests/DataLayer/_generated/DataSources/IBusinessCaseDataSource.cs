@@ -5,11 +5,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using Havit.Data.Patterns.DataSources;
+using EnchantedCoder.Data.Patterns.DataSources;
 
-namespace Havit.EFCoreTests.DataLayer.DataSources;
+namespace EnchantedCoder.EFCoreTests.DataLayer.DataSources;
 
-[System.CodeDom.Compiler.GeneratedCode("Havit.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
-public interface IBusinessCaseDataSource : IDataSource<Havit.EFCoreTests.Model.BusinessCase>
+[System.CodeDom.Compiler.GeneratedCode("EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator", "1.0")]
+public interface IBusinessCaseDataSource : IDataSource<EnchantedCoder.EFCoreTests.Model.BusinessCase>
 {
 }

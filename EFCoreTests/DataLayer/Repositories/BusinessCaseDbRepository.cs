@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Havit.Data.EntityFrameworkCore;
-using Havit.Data.EntityFrameworkCore.Patterns.Repositories;
-using Havit.Data.EntityFrameworkCore.Patterns.SoftDeletes;
-using Havit.Data.Patterns.DataEntries;
-using Havit.Data.Patterns.DataLoaders;
-using Havit.EFCoreTests.Model;
+using EnchantedCoder.Data.EntityFrameworkCore;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Repositories;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.SoftDeletes;
+using EnchantedCoder.Data.Patterns.DataEntries;
+using EnchantedCoder.Data.Patterns.DataLoaders;
+using EnchantedCoder.EFCoreTests.Model;
 
-namespace Havit.EFCoreTests.DataLayer.Repositories
+namespace EnchantedCoder.EFCoreTests.DataLayer.Repositories
 {
 	public partial class BusinessCaseDbRepository : IBusinessCaseRepository
 	{
