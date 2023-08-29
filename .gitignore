@@ -252,17 +252,4 @@ paket-files/
 *.sln.iml
 
 # Dist folders are generated
-/Web/wwwroot/dist
-/Web/ClientApp/dist
-/Web/Web.rar
-/Web/package-lock.json
-Web/.vscode/launch.json
 .vscode
-/WebAPI/App_Data
-
-/Sandcastle/doc
-/EnchantedCoder.Web/Bootstrap/Content/js/ModalExtension.js
-/WebApplicationTest/Scripts/EnchantedCoder.Web.Bootstrap/*.js
-/WebApplicationTest/Content/EnchantedCoder.Web.ClientContent/*.css
-/WebApplicationTest/Content/EnchantedCoder.Web.ClientContent/*.png
-/WebApplicationTest/Scripts/EnchantedCoder.Web.ClientContent/*.js
