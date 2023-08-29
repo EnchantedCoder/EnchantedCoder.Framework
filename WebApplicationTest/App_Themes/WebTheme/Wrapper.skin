@@ -1,3 +1,0 @@
-﻿<havit:Wrapper SkinID="Test1" BeginHtml="a" runat="server" />
-
-<havit:Wrapper SkinID="Test2" EndHtml='Nahrazení <strong>zn"ačky: <strong>#TESTATTRIBUTEVALUE#</strong>' runat="server" />

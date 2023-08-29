@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net48;netstandard2.0</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0</TargetFrameworks>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	</PropertyGroup>
 
@@ -19,27 +19,8 @@
 		<NoWarn>1701;1702;1591</NoWarn>
 	</PropertyGroup>
 
-	<!-- Conditional dependencies: see https://learn.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#adding-a-packagereference-condition -->
 	<ItemGroup>
-		<!-- net48 dependencies -->
-		<Reference Include="System.DirectoryServices" Pack="false" Condition="'$(TargetFramework)' == 'net48'" />
-		<Reference Include="System.Runtime.Caching" Pack="false" Condition="'$(TargetFramework)' == 'net48'" />
-		<Reference Include="System.Web" Pack="false" Condition="'$(TargetFramework)' == 'net48'" />		
-		<PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" Condition="'$(TargetFramework)' == 'net48'" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<!-- netstandard2.0 dependencies -->
-		<PackageReference Include="System.Runtime.Caching" Version="6.0.0" Condition="'$(TargetFramework)' == 'netstandard2.0'" />
-	</ItemGroup>
-	<!-- End of conditional dependencies -->
-
-	<ItemGroup>
-		<!-- shared net48 & netstandard2.0 dependencies -->
-		<!-- Microsoft.Bcl.AsyncInterfaces musíme uvést jako závislost (obou frameworků), přestože build jde i bez nich.
-			 Důvod, proč jde kompilace i bez nich je takový, že Microsoft.Extensions.DependencyInjection.Abstractions mají uvedenu Microsoft.Bcl.AsyncInterfaces jako svoji závislost pro
-			 netstandard2.0. Ovšem tuto knihovnu nemají jako závislost pro net6, takže při zavedení do projektu (bez explicitního uvedení Microsoft.Bcl.AsyncInterfaces zde)
-			 dojde k pádu na nenalezení Microsoft.Bcl.AsyncInterfaces. -->
+		<PackageReference Include="System.Runtime.Caching" Version="6.0.0" />
 		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="6.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="6.0.0" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
@@ -53,5 +34,5 @@
 	<ItemGroup>
 		<ProjectReference Include="..\Havit.Core\Havit.Core.csproj" />
 	</ItemGroup>
-	
+
 </Project>
