@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using EnchantedCoder.Data.SqlClient.Azure.SqlServerAadAuthentication;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.Data.SqlClient.Azure.Tests.SqlServerAadAuthentication
 {

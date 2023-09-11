@@ -1,4 +1,11 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.ExceptionServices;
+using System.Text;
+using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching.Internal;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Infrastructure;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.PropertyLambdaExpressions.Internal;
@@ -9,13 +16,6 @@ using EnchantedCoder.Services;
 using EnchantedCoder.Services.Caching;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.ExceptionServices;
-using System.Text;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching
 {

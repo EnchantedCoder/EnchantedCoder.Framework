@@ -6,34 +6,34 @@ using System.Text;
 
 namespace EnchantedCoder.GoogleAnalytics.ValueValidators
 {
-    internal class ValueRequiredValidator
-    {
-        public static bool Validate(object value, MemberInfo memberInfo)
-        {
-            if (!HasRequiredAttribute(memberInfo))
-            {
-                return true;
-            }
+	internal class ValueRequiredValidator
+	{
+		public static bool Validate(object value, MemberInfo memberInfo)
+		{
+			if (!HasRequiredAttribute(memberInfo))
+			{
+				return true;
+			}
 
-            if (value == null)
-            {
-                return false;
-            }
-            else if (value.GetType() == typeof(String))
-            {
-                return !String.IsNullOrEmpty(value as String);
-            }
-            else if (value == default)
-            {
-                return false;
-            }
+			if (value == null)
+			{
+				return false;
+			}
+			else if (value.GetType() == typeof(String))
+			{
+				return !String.IsNullOrEmpty(value as String);
+			}
+			else if (value == default)
+			{
+				return false;
+			}
 
-            return true;
-        }
+			return true;
+		}
 
-        private static bool HasRequiredAttribute(MemberInfo memberInfo)
-        {
-            return memberInfo.GetCustomAttribute<RequiredAttribute>() != null;
-        }
-    }
+		private static bool HasRequiredAttribute(MemberInfo memberInfo)
+		{
+			return memberInfo.GetCustomAttribute<RequiredAttribute>() != null;
+		}
+	}
 }

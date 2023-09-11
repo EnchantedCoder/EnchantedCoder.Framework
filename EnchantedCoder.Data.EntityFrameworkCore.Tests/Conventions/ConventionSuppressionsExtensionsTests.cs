@@ -1,13 +1,13 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Attributes;
-using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
-using EnchantedCoder.Data.EntityFrameworkCore.Metadata.Conventions.Infrastructure;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EnchantedCoder.Data.EntityFrameworkCore.Attributes;
+using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
+using EnchantedCoder.Data.EntityFrameworkCore.Metadata.Conventions.Infrastructure;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Tests.Conventions
 {

@@ -1,11 +1,11 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Patterns.UnitOfWorks.EntityValidation;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.UnitOfWorks.EntityValidation;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.UnitOfWorks.EntityValidation
 {

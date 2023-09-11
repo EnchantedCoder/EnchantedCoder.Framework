@@ -1,7 +1,15 @@
-using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DependencyInjection;
+using System;
+using System.Linq;
+using System.Text;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataLoaders;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataSeeds;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DependencyInjection;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.UnitOfWorks;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.UnitOfWorks.BeforeCommitProcessors;
+using EnchantedCoder.Data.EntityFrameworkCore.TestHelpers.DependencyInjection.Infrastructure.DataLayer;
+using EnchantedCoder.Data.EntityFrameworkCore.TestHelpers.DependencyInjection.Infrastructure.Entity;
+using EnchantedCoder.Data.EntityFrameworkCore.TestHelpers.DependencyInjection.Infrastructure.Model;
 using EnchantedCoder.Data.Patterns.DataLoaders;
 using EnchantedCoder.Data.Patterns.DataSeeds;
 using EnchantedCoder.Data.Patterns.DataSources;
@@ -9,20 +17,12 @@ using EnchantedCoder.Data.Patterns.Localizations;
 using EnchantedCoder.Data.Patterns.Repositories;
 using EnchantedCoder.Data.Patterns.UnitOfWorks;
 using EnchantedCoder.Services;
-using EnchantedCoder.Services.TimeServices;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Linq;
-using System.Text;
-using System;
-using Microsoft.Extensions.DependencyInjection;
-using EnchantedCoder.Data.EntityFrameworkCore.TestHelpers.DependencyInjection.Infrastructure.DataLayer;
 using EnchantedCoder.Services.Caching;
-using EnchantedCoder.Data.EntityFrameworkCore.TestHelpers.DependencyInjection.Infrastructure.Model;
-using EnchantedCoder.Data.EntityFrameworkCore.TestHelpers.DependencyInjection.Infrastructure.Entity;
+using EnchantedCoder.Services.TimeServices;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataLoaders;
-using EnchantedCoder.Data.EntityFrameworkCore.Patterns.UnitOfWorks;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.DependencyInjection
 {

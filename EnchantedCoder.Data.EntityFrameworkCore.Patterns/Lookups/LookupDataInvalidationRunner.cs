@@ -1,8 +1,8 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Patterns.UnitOfWorks;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.UnitOfWorks;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Lookups
 {

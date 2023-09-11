@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Linq;
+using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
+using EnchantedCoder.Data.EntityFrameworkCore.Metadata.Conventions.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using EnchantedCoder.Data.EntityFrameworkCore.Metadata.Conventions.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Metadata.Conventions
 {

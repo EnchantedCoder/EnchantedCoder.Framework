@@ -555,7 +555,7 @@ namespace EnchantedCoder.Tests.Linq
 				targetKeySelector: target => target.Id,
 				sourceKeySelector: source => source.Id,
 				newItemCreateFunc: source => null,
-				updateItemAction: (source, target) => {	},
+				updateItemAction: (source, target) => { },
 				removeItemAction: (target) => { },
 				removeItemFromCollection: false
 			);

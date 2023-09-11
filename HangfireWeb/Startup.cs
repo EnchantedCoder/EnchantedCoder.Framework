@@ -1,78 +1,78 @@
-using Hangfire;
-using Hangfire.Dashboard;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using EnchantedCoder.HangfireApp.Infrastructure.Security;
 using EnchantedCoder.HangfireWeb.Infrastructure.ConfigurationExtensions;
+using Hangfire;
+using Hangfire.Dashboard;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace HangfireWeb
 {
-    public class Startup
-    {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+	public class Startup
+	{
+		public Startup(IConfiguration configuration)
+		{
+			Configuration = configuration;
+		}
 
-        public IConfiguration Configuration { get; }
+		public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddAuthorization(options =>
-            {
-                //options.AddPolicy(PolicyNames.HangfireDashboardAcccessPolicy, policy => policy...);
-            });
+		// This method gets called by the runtime. Use this method to add services to the container.
+		public void ConfigureServices(IServiceCollection services)
+		{
+			services.AddAuthorization(options =>
+			{
+				//options.AddPolicy(PolicyNames.HangfireDashboardAcccessPolicy, policy => policy...);
+			});
 
-            services.AddRazorPages();
+			services.AddRazorPages();
 
-            // Hangfire
-            services.AddCustomizedHangfire(Configuration);
-        }
+			// Hangfire
+			services.AddCustomizedHangfire(Configuration);
+		}
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Error");
-            }
+		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+		{
+			if (env.IsDevelopment())
+			{
+				app.UseDeveloperExceptionPage();
+			}
+			else
+			{
+				app.UseExceptionHandler("/Error");
+			}
 
-            app.UseStaticFiles();
+			app.UseStaticFiles();
 
-            app.UseRouting();
+			app.UseRouting();
 
-            app.UseAuthorization();
+			app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapRazorPages();
+			app.UseEndpoints(endpoints =>
+			{
+				endpoints.MapRazorPages();
 
-                endpoints.MapHangfireDashboard("/hangfire", new DashboardOptions
-                {
-                    Authorization = new List<IDashboardAuthorizationFilter>() { }, // see https://sahansera.dev/securing-hangfire-dashboard-with-endpoint-routing-auth-policy-aspnetcore/
-                    DisplayStorageConnectionString = false,
-                    DashboardTitle = "NewProjectTemplate - Jobs",
-                    StatsPollingInterval = 60_000, // once a minute
-                    DisplayNameFunc = (_, job) => EnchantedCoder.Hangfire.Extensions.Helpers.JobNameHelper.TryGetSimpleName(job, out string simpleName)
-                        ? simpleName
-                        : job.ToString()
-                });
-                //.RequireAuthorization(PolicyNames.HangfireDashboardAcccessPolicy);
+				endpoints.MapHangfireDashboard("/hangfire", new DashboardOptions
+				{
+					Authorization = new List<IDashboardAuthorizationFilter>() { }, // see https://sahansera.dev/securing-hangfire-dashboard-with-endpoint-routing-auth-policy-aspnetcore/
+					DisplayStorageConnectionString = false,
+					DashboardTitle = "NewProjectTemplate - Jobs",
+					StatsPollingInterval = 60_000, // once a minute
+					DisplayNameFunc = (_, job) => EnchantedCoder.Hangfire.Extensions.Helpers.JobNameHelper.TryGetSimpleName(job, out string simpleName)
+						? simpleName
+						: job.ToString()
+				});
+				//.RequireAuthorization(PolicyNames.HangfireDashboardAcccessPolicy);
 
-            });
-        }
-    }
+			});
+		}
+	}
 }

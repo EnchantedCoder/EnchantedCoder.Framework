@@ -1,5 +1,5 @@
-﻿using EnchantedCoder.Diagnostics.Contracts;
-using System;
+﻿using System;
+using EnchantedCoder.Diagnostics.Contracts;
 
 namespace EnchantedCoder.Services
 {

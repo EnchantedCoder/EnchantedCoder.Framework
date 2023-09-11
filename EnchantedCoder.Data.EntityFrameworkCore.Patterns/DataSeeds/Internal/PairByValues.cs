@@ -1,8 +1,8 @@
-﻿using EnchantedCoder.Diagnostics.Contracts;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using EnchantedCoder.Diagnostics.Contracts;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataSeeds.Internal
 {

@@ -1,11 +1,11 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Attributes;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using EnchantedCoder.Data.EntityFrameworkCore.Attributes;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Metadata.Conventions.Infrastructure
 {

@@ -9,7 +9,7 @@ namespace EnchantedCoder.GoogleAnalytics.Measurements.Transactions
 	/// Transaction item
 	/// </summary>
 	public class MeasurementTransactionItemVM
-    {
+	{
 		/// <summary>
 		/// [Required]
 		/// Specifies the item name.

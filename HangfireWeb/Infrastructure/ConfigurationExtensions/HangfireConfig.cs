@@ -1,8 +1,8 @@
 ﻿using System;
+using EnchantedCoder.Hangfire.Extensions.Filters;
 using Hangfire;
 using Hangfire.Console;
 using Hangfire.SqlServer;
-using EnchantedCoder.Hangfire.Extensions.Filters;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 

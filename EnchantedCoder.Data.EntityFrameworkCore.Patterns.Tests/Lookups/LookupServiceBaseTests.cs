@@ -1,3 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Lookups;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.SoftDeletes;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.Lookups.Infrastructure;
@@ -8,11 +13,6 @@ using EnchantedCoder.Services.TimeServices;
 using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.Lookups
 {

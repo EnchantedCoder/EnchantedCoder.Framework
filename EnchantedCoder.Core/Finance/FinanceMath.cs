@@ -1,5 +1,5 @@
-using EnchantedCoder.Diagnostics.Contracts;
 using System;
+using EnchantedCoder.Diagnostics.Contracts;
 
 namespace EnchantedCoder.Finance
 {
@@ -43,7 +43,7 @@ namespace EnchantedCoder.Finance
 					num = 1.0;
 				}
 				double num2 = Math.Pow(interestRate + 1.0, numberOfPeriods);
-				result = (-futureValue - presentValue * num2) / (num * (num2 - 1.0)) * interestRate;
+				result = (-futureValue - (presentValue * num2)) / (num * (num2 - 1.0)) * interestRate;
 			}
 			return result;
 		}
@@ -108,11 +108,11 @@ namespace EnchantedCoder.Finance
 		{
 			if (interestRate == 0.0)
 			{
-				return 0.0 - presentValue - paymentAmount * numberOfPeriods;
+				return 0.0 - presentValue - (paymentAmount * numberOfPeriods);
 			}
 			double num = ((due == DueDate.EndOfPeriod) ? 1.0 : (1.0 + interestRate));
 			double num2 = Math.Pow(1.0 + interestRate, numberOfPeriods);
-			return (0.0 - presentValue) * num2 - paymentAmount / interestRate * num * (num2 - 1.0);
+			return ((0.0 - presentValue) * num2) - (paymentAmount / interestRate * num * (num2 - 1.0));
 		}
 
 		/// <summary>
@@ -130,11 +130,11 @@ namespace EnchantedCoder.Finance
 		{
 			if (interestRate == 0.0)
 			{
-				return 0.0 - futureValue - paymentAmount * numberOfPeriods;
+				return 0.0 - futureValue - (paymentAmount * numberOfPeriods);
 			}
 			double num = ((due == DueDate.EndOfPeriod) ? 1.0 : (1.0 + interestRate));
 			double num2 = Math.Pow(1.0 + interestRate, numberOfPeriods);
-			return (-(futureValue + paymentAmount * num * ((num2 - 1.0) / interestRate)) / num2);
+			return (-(futureValue + (paymentAmount * num * ((num2 - 1.0) / interestRate))) / num2);
 		}
 	}
 }

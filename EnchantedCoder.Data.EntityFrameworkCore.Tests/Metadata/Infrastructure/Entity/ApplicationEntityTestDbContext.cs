@@ -1,11 +1,11 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
-using EnchantedCoder.Data.EntityFrameworkCore.Tests.Metadata.Infrastructure.Model;
-using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
+using EnchantedCoder.Data.EntityFrameworkCore.Tests.Metadata.Infrastructure.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Tests.Metadata.Infrastructure.Entity
 {

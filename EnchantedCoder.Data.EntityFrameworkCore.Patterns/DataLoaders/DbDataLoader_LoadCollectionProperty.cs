@@ -1,4 +1,12 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataLoaders.Internal;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Reflection;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataLoaders.Internal;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.PropertyLambdaExpressions.Internal;
 using EnchantedCoder.Data.Patterns.DataLoaders;
 using EnchantedCoder.Data.Patterns.Infrastructure;
@@ -7,14 +15,6 @@ using EnchantedCoder.Linq;
 using EnchantedCoder.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Reflection;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataLoaders
 {

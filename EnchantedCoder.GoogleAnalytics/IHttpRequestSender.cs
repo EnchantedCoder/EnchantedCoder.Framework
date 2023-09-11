@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace EnchantedCoder.GoogleAnalytics
 {
-    /// <summary>
-    /// Abstracted http client
-    /// </summary>
-    public interface IHttpRequestSender
-    {
-        /// <summary>
-        ///  Send a POST request to the specified Uri as an asynchronous operation.
-        /// </summary>
-        /// <param name="requestUri">Request uri</param>
-        /// <param name="content">Content of the request</param>
-        /// <returns>Awaitable task</returns>
-        Task PostAsync(string requestUri, HttpContent content);
-    }
+	/// <summary>
+	/// Abstracted http client
+	/// </summary>
+	public interface IHttpRequestSender
+	{
+		/// <summary>
+		///  Send a POST request to the specified Uri as an asynchronous operation.
+		/// </summary>
+		/// <param name="requestUri">Request uri</param>
+		/// <param name="content">Content of the request</param>
+		/// <returns>Awaitable task</returns>
+		Task PostAsync(string requestUri, HttpContent content);
+	}
 }

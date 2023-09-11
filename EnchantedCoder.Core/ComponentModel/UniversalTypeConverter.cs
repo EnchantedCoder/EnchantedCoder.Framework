@@ -1,9 +1,9 @@
-﻿using EnchantedCoder.Diagnostics.Contracts;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using EnchantedCoder.Diagnostics.Contracts;
 
 namespace EnchantedCoder.ComponentModel
 {
@@ -64,8 +64,8 @@ namespace EnchantedCoder.ComponentModel
 		public static bool TryConvertTo<T>(object value, out T result, CultureInfo culture)
 		{
 			var success = TryConvertTo(value, typeof(T), out object objectResult, culture);
-		    result = success ? (T)objectResult : default(T);
-		    return success;
+			result = success ? (T)objectResult : default(T);
+			return success;
 		}
 
 		/// <summary>

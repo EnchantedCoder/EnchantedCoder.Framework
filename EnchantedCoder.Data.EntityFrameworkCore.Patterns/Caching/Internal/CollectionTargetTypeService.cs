@@ -1,10 +1,10 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching.Internal
 {

@@ -1,13 +1,13 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataSeeds.Internal;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataSeeds.Internal;
 using EnchantedCoder.Data.EntityFrameworkCore.Threading.Internal;
 using EnchantedCoder.Data.Patterns.DataSeeds;
 using EnchantedCoder.Diagnostics.Contracts;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataSeeds
 {

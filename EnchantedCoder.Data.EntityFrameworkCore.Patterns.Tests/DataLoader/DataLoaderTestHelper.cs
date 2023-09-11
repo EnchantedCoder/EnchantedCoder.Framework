@@ -1,4 +1,9 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataLoaders;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataLoaders.Internal;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Infrastructure;
@@ -8,11 +13,6 @@ using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.DataLoader.Model;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.TestsInfrastructure;
 using Microsoft.Extensions.Logging;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.DataLoader
 {

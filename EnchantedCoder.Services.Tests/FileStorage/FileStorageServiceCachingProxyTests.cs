@@ -1,10 +1,3 @@
-using EnchantedCoder.Services.Caching;
-using EnchantedCoder.Services.FileStorage;
-using EnchantedCoder.Services.TestHelpers.Caching;
-using EnchantedCoder.Services.Tests.FileStorage.Infrastructure;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,6 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using EnchantedCoder.Services.Caching;
+using EnchantedCoder.Services.FileStorage;
+using EnchantedCoder.Services.TestHelpers.Caching;
+using EnchantedCoder.Services.Tests.FileStorage.Infrastructure;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 
 namespace EnchantedCoder.Services.Tests.FileStorage
 {

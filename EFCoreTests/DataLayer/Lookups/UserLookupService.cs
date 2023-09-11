@@ -1,13 +1,13 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Lookups;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Text;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Lookups;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.SoftDeletes;
 using EnchantedCoder.Data.Patterns.DataSources;
 using EnchantedCoder.Data.Patterns.Infrastructure;
 using EnchantedCoder.Data.Patterns.Repositories;
 using EnchantedCoder.EFCoreTests.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq.Expressions;
-using System.Text;
 
 namespace EnchantedCoder.EFCoreTests.DataLayer.Lookups
 {

@@ -1,13 +1,13 @@
-using Castle.Windsor;
-using EnchantedCoder.Extensions.DependencyInjection.CastleWindsor.Tests.Infrastructure;
-using EnchantedCoder.Extensions.DependencyInjection.CastleWindsor;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Castle.MicroKernel;
+using Castle.Windsor;
+using EnchantedCoder.Extensions.DependencyInjection.CastleWindsor;
+using EnchantedCoder.Extensions.DependencyInjection.CastleWindsor.Tests.Infrastructure;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.Extensions.DependencyInjection.CastleWindsor.Tests
 {

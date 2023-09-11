@@ -1,7 +1,7 @@
-﻿using Hangfire;
-using System;
+﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Hangfire;
 
 namespace EnchantedCoder.Hangfire.Extensions.RecurringJobs;
 

@@ -1,7 +1,7 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Attributes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using EnchantedCoder.Data.EntityFrameworkCore.Attributes;
 
 namespace EnchantedCoder.EFCoreTests.Model
 {

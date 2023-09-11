@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator.Services;
-using Microsoft.EntityFrameworkCore;
-using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
 using EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator.Configuration;
+using EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator.Services;
+using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator.Actions.ModelMetadataClasses.Model
 {

@@ -1,5 +1,5 @@
-﻿using EnchantedCoder.Model.Localizations;
-using System;
+﻿using System;
+using EnchantedCoder.Model.Localizations;
 
 namespace EnchantedCoder.Data.Patterns.Infrastructure
 {

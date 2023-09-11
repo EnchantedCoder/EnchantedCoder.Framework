@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text.RegularExpressions;
-using EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer.ModelExtensions.ExtendedProperties.Attributes;
 using EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer.ExtendedProperties;
+using EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer.ModelExtensions.ExtendedProperties.Attributes;
 using EnchantedCoder.Data.EntityFrameworkCore.Migrations.ModelExtensions.StoredProcedures;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

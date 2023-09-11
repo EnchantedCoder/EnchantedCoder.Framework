@@ -1,8 +1,8 @@
-﻿using EnchantedCoder.Data.Patterns.DataSeeds;
-using Microsoft.Extensions.DependencyInjection;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using EnchantedCoder.Data.Patterns.DataSeeds;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.DependencyInjection.Infrastructure.Factories
 {

@@ -1,13 +1,13 @@
-﻿using EnchantedCoder.Services.FileStorage;
-using EnchantedCoder.Services.Tests.FileStorage.Infrastructure;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EnchantedCoder.Services.FileStorage;
+using EnchantedCoder.Services.Tests.FileStorage.Infrastructure;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.Services.Tests.FileStorage
 {

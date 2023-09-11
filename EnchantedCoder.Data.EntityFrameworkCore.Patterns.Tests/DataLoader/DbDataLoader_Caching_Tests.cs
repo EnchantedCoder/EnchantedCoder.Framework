@@ -1,3 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using EnchantedCoder.Data.EntityFrameworkCore.Attributes;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataLoaders;
@@ -9,11 +14,6 @@ using EnchantedCoder.Services.Caching;
 using EnchantedCoder.Services.TestHelpers.Caching;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.DataLoader
 {

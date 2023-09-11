@@ -1,11 +1,11 @@
-﻿using EnchantedCoder.AspNetCore.ExceptionMonitoring.Formatters;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EnchantedCoder.AspNetCore.ExceptionMonitoring.Formatters;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.AspNetCore.Tests.ExceptionMonitoring.Formatters
 {

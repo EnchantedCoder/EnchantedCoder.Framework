@@ -1,7 +1,8 @@
-using Hangfire;
-using Hangfire.Console;
-using Hangfire.Console.Extensions;
-using Hangfire.SqlServer;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using EnchantedCoder.ApplicationInsights.DependencyCollector;
 using EnchantedCoder.AspNetCore.ExceptionMonitoring.Services;
 using EnchantedCoder.Diagnostics.Contracts;
@@ -9,17 +10,16 @@ using EnchantedCoder.Hangfire.Extensions.BackgroundJobs;
 using EnchantedCoder.Hangfire.Extensions.Filters;
 using EnchantedCoder.Hangfire.Extensions.RecurringJobs;
 using EnchantedCoder.HangfireJobs.Jobs;
+using Hangfire;
+using Hangfire.Console;
+using Hangfire.Console.Extensions;
+using Hangfire.SqlServer;
 using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace EnchantedCoder.HangfireApp
 {
@@ -151,4 +151,4 @@ namespace EnchantedCoder.HangfireApp
 		}
 	}
 
-	}
+}

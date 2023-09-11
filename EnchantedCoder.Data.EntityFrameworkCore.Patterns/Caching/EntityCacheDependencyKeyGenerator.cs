@@ -1,9 +1,9 @@
-﻿using EnchantedCoder.Diagnostics.Contracts;
-using EnchantedCoder.Services.Caching;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
+using EnchantedCoder.Diagnostics.Contracts;
+using EnchantedCoder.Services.Caching;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching
 {

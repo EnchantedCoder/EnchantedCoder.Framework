@@ -1,15 +1,15 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching.Internal;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Infrastructure;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.PropertyLambdaExpressions.Internal;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.Caching.Infrastructure;
 using EnchantedCoder.Services.Caching;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.Caching
 {

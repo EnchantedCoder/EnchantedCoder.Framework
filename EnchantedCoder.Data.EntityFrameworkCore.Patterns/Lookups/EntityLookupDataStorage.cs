@@ -1,8 +1,8 @@
-﻿using EnchantedCoder.Collections.Generic;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System;
+﻿using System;
 using System.Collections.Concurrent;
 using System.Text;
+using EnchantedCoder.Collections.Generic;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Lookups
 {

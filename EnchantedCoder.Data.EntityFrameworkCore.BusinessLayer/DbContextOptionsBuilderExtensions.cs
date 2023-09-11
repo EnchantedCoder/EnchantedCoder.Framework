@@ -1,12 +1,12 @@
-using EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer.Metadata.Conventions.Infrastructure;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer.Metadata.Conventions.Infrastructure;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer
 {

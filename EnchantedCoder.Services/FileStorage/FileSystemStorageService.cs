@@ -7,8 +7,8 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using EnchantedCoder.Linq;
 using EnchantedCoder.Diagnostics.Contracts;
+using EnchantedCoder.Linq;
 using EnchantedCoder.Text.RegularExpressions;
 
 namespace EnchantedCoder.Services.FileStorage

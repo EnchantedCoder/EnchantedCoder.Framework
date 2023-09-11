@@ -1,14 +1,14 @@
-using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataLoaders.Internal;
-using EnchantedCoder.Data.Patterns.DataLoaders;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataLoaders.Internal;
+using EnchantedCoder.Data.Patterns.DataLoaders;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Extensions.Logging;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataLoaders
 {

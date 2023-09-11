@@ -1,12 +1,12 @@
-﻿using EnchantedCoder.Collections;
-using EnchantedCoder.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using EnchantedCoder.Collections;
+using EnchantedCoder.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.Tests.Linq
 {

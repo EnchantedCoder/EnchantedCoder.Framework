@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Hangfire.Common;
 using EnchantedCoder.Hangfire.Extensions.RecurringJobs.Services;
+using Hangfire.Common;
 
 namespace EnchantedCoder.Hangfire.Extensions.Helpers;
 

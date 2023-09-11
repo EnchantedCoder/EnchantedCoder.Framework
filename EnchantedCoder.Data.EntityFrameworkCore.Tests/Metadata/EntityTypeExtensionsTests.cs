@@ -1,10 +1,10 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Tests.ModelValidation.Infrastructure;
-using EnchantedCoder.Data.EntityFrameworkCore.Tests.ModelValidation.Infrastructure.Model;
-using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
 using EnchantedCoder.Data.EntityFrameworkCore.Tests.Metadata.Infrastructure.Entity;
 using EnchantedCoder.Data.EntityFrameworkCore.Tests.Metadata.Infrastructure.Model;
+using EnchantedCoder.Data.EntityFrameworkCore.Tests.ModelValidation.Infrastructure;
+using EnchantedCoder.Data.EntityFrameworkCore.Tests.ModelValidation.Infrastructure.Model;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Tests.Metadata
 {

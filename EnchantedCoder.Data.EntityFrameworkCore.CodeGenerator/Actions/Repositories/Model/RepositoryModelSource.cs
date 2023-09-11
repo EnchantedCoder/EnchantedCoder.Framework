@@ -2,8 +2,8 @@
 using System.Linq;
 using EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator.Actions.DataEntries.Model;
 using EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator.Services;
-using Microsoft.EntityFrameworkCore;
 using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator.Actions.Repositories.Model
 {

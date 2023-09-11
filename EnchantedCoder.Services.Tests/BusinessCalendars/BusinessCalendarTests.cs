@@ -1,6 +1,6 @@
-﻿using EnchantedCoder.Services.BusinessCalendars;
+﻿using System;
+using EnchantedCoder.Services.BusinessCalendars;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
 namespace EnchantedCoder.Services.Tests.BusinessCalendars
 {

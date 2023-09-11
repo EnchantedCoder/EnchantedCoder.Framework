@@ -1,10 +1,10 @@
-﻿using Hangfire.Common;
-using Hangfire.Server;
-using EnchantedCoder.AspNetCore.ExceptionMonitoring.Services;
-using Microsoft.Extensions.DependencyInjection;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using EnchantedCoder.AspNetCore.ExceptionMonitoring.Services;
+using Hangfire.Common;
+using Hangfire.Server;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace EnchantedCoder.Hangfire.Extensions.Filters;
 

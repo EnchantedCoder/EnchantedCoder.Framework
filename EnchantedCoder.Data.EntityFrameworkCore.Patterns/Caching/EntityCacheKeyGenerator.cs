@@ -1,9 +1,9 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
+using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching
 {

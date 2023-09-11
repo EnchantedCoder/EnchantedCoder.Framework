@@ -1,7 +1,4 @@
-﻿using EnchantedCoder.Diagnostics.Contracts;
-using EnchantedCoder.GoogleAnalytics.Measurements.Events;
-using EnchantedCoder.GoogleAnalytics.Measurements.Transactions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
@@ -10,6 +7,9 @@ using System.Linq.Expressions;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using EnchantedCoder.Diagnostics.Contracts;
+using EnchantedCoder.GoogleAnalytics.Measurements.Events;
+using EnchantedCoder.GoogleAnalytics.Measurements.Transactions;
 
 namespace EnchantedCoder.GoogleAnalytics.Measurements
 {

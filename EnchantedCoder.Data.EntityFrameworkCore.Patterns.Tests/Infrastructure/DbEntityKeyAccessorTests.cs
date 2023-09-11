@@ -1,14 +1,14 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Infrastructure;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Infrastructure;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.Infrastructure;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.TestsInfrastructure;
 using EnchantedCoder.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.Infrastructure
 {

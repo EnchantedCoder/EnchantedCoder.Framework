@@ -1,7 +1,7 @@
-﻿using System.Linq.Expressions;
-using System.ComponentModel;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
+using System.Linq.Expressions;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace EnchantedCoder.Data.Patterns.DataLoaders
 {

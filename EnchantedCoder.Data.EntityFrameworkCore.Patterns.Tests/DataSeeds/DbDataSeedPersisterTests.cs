@@ -1,20 +1,20 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Castle.Components.DictionaryAdapter;
-using Microsoft.EntityFrameworkCore;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataSeeds;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataSeeds.Internal;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.DataSeeds.Infrastructure;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.Infrastructure;
 using EnchantedCoder.Data.Patterns.DataSeeds;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.ComponentModel.DataAnnotations;
-using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.DataSeeds.Infrastructure;
-using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataSeeds.Internal;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.DataSeeds
 {

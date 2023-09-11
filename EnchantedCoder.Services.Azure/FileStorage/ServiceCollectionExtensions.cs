@@ -1,13 +1,13 @@
-﻿using Azure.Core;
-using EnchantedCoder.Diagnostics.Contracts;
-using EnchantedCoder.Services.FileStorage;
-using Microsoft.Extensions.DependencyInjection;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Azure.Core;
+using EnchantedCoder.Diagnostics.Contracts;
+using EnchantedCoder.Services.FileStorage;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace EnchantedCoder.Services.Azure.FileStorage
 {

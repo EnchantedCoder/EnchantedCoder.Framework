@@ -1,16 +1,16 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading;
+using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
 using EnchantedCoder.Data.EntityFrameworkCore.Metadata.Conventions;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching.Internal;
 using EnchantedCoder.Services;
 using EnchantedCoder.Services.Caching;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching
 {

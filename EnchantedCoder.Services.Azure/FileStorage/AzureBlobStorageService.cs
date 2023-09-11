@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
-using EnchantedCoder.Services.FileStorage;
-using FileInfo = EnchantedCoder.Services.FileStorage.FileInfo;
-using EnchantedCoder.Diagnostics.Contracts;
-using EnchantedCoder.Text.RegularExpressions;
-using Azure.Storage.Blobs;
 using Azure;
+using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
+using EnchantedCoder.Diagnostics.Contracts;
+using EnchantedCoder.Services.FileStorage;
+using EnchantedCoder.Text.RegularExpressions;
 using EnchantedCoder.Threading;
-using System.Runtime.CompilerServices;
+using FileInfo = EnchantedCoder.Services.FileStorage.FileInfo;
 
 namespace EnchantedCoder.Services.Azure.FileStorage
 {

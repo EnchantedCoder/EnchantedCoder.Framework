@@ -4,23 +4,23 @@ using System.Text;
 
 namespace EnchantedCoder.GoogleAnalytics
 {
-    /// <summary>
-    /// Attribute that defines value for the enum
-    /// </summary>
-    public class ParameterValueAttribute : Attribute
-    {
-        /// <summary>
-        /// Value of the enum that is serialized into a query parameter
-        /// </summary>
-        public string Value { get; }
+	/// <summary>
+	/// Attribute that defines value for the enum
+	/// </summary>
+	public class ParameterValueAttribute : Attribute
+	{
+		/// <summary>
+		/// Value of the enum that is serialized into a query parameter
+		/// </summary>
+		public string Value { get; }
 
-        /// <summary>
-        /// Public constructor
-        /// </summary>
-        /// <param name="value">Value of the enum that is serialized into a query parameter</param>
-        public ParameterValueAttribute(string value)
-        {
-            Value = value;
-        }
-    }
+		/// <summary>
+		/// Public constructor
+		/// </summary>
+		/// <param name="value">Value of the enum that is serialized into a query parameter</param>
+		public ParameterValueAttribute(string value)
+		{
+			Value = value;
+		}
+	}
 }

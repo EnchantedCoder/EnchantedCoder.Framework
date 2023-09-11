@@ -1,6 +1,6 @@
-﻿using EnchantedCoder.Model.Collections.Generic;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using EnchantedCoder.Model.Collections.Generic;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.DataLoader.Model
 {

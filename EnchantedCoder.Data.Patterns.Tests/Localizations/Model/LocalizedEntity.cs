@@ -7,7 +7,7 @@ using EnchantedCoder.Model.Localizations;
 
 namespace EnchantedCoder.Data.Patterns.Tests.Localizations.Model
 {
-    public class LocalizedEntity : ILocalized<LocalizedEntityLocalization>
+	public class LocalizedEntity : ILocalized<LocalizedEntityLocalization>
 	{
 		public int Id { get; set; }
 

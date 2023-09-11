@@ -1,8 +1,8 @@
-﻿using EnchantedCoder.Data.Patterns.DataSeeds;
-using EnchantedCoder.EFCoreTests.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using EnchantedCoder.Data.Patterns.DataSeeds;
+using EnchantedCoder.EFCoreTests.Model;
 
 namespace EnchantedCoder.EFCoreTests.DataLayer.Seeds.ProtectedProperties
 {

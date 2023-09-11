@@ -43,7 +43,7 @@ public class RecurringJob<TJob> : IRecurringJob
 	/// <summary>
 	/// Queue name.
 	/// </summary>
-	public string Queue { get;  }
+	public string Queue { get; }
 
 	/// <summary>
 	/// Constructor.

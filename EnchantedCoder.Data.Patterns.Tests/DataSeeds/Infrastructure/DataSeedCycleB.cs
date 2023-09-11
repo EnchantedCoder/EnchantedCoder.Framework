@@ -10,7 +10,7 @@ using EnchantedCoder.Data.Patterns.DataSeeds.Profiles;
 namespace EnchantedCoder.Data.Patterns.Tests.DataSeeds.Infrastructure
 {
 	internal class DataSeedCycleB : DataSeed<DefaultProfile>
-    {
+	{
 		public override void SeedData()
 		{
 			// NOOP

@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.EntityFrameworkCore.Metadata;
 using EnchantedCoder.Linq;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Metadata
 {

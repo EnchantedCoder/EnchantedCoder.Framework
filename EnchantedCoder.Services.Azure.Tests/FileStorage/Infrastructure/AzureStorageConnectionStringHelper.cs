@@ -1,7 +1,7 @@
-﻿using Azure.Identity;
+﻿using System;
+using Azure.Identity;
 using Microsoft.Azure.Services.AppAuthentication;
 using Microsoft.Extensions.Configuration;
-using System;
 
 namespace EnchantedCoder.Services.Azure.Tests.FileStorage.Infrastructure
 {

@@ -1,7 +1,7 @@
-﻿using EnchantedCoder.Services.Caching;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using EnchantedCoder.Services.Caching;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching
 {

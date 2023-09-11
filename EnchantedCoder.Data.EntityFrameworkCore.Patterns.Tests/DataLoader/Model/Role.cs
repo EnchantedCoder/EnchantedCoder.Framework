@@ -1,5 +1,5 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Attributes;
-using System;
+﻿using System;
+using EnchantedCoder.Data.EntityFrameworkCore.Attributes;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.DataLoader.Model
 {

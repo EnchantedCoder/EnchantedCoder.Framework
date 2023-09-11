@@ -1,9 +1,9 @@
-using EnchantedCoder.Diagnostics.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using EnchantedCoder.Diagnostics.Contracts;
 
 namespace EnchantedCoder.ComponentModel
 {

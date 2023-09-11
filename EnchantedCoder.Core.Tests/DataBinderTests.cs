@@ -1,15 +1,15 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.Tests
 {
-    [TestClass]
+	[TestClass]
 	public class DataBinderTests
-    {
+	{
 		[TestMethod]
 		public void DataBinderExt_SetValue_PublicProperty()
 		{
@@ -43,5 +43,5 @@ namespace EnchantedCoder.Tests
 			public int MyPropertyWithProtectedSetter { get; protected set; }
 		}
 
-    }
+	}
 }

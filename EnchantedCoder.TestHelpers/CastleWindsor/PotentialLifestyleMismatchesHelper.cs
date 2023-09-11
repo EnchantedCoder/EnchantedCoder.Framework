@@ -1,12 +1,12 @@
-﻿using Castle.Core;
+﻿using System;
+using System.Linq;
+using System.Text;
+using Castle.Core;
 using Castle.MicroKernel;
 using Castle.Windsor;
 using Castle.Windsor.Diagnostics;
 using Castle.Windsor.Diagnostics.Helpers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Linq;
-using System.Text;
 
 namespace EnchantedCoder.TestHelpers.CastleWindsor
 {

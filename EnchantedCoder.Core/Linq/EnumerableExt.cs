@@ -1,8 +1,8 @@
-using EnchantedCoder.Diagnostics.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using EnchantedCoder.Diagnostics.Contracts;
 
 namespace EnchantedCoder.Linq
 {
@@ -83,9 +83,9 @@ namespace EnchantedCoder.Linq
 			keys.UnionWith(rightLookup.Select(p => p.Key));
 
 			IEnumerable<TResult> result = from key in keys
-					   from xLeft in leftLookup[key].DefaultIfEmpty()
-					   from xRight in rightLookup[key].DefaultIfEmpty()
-					   select resultSelector(xLeft, xRight);
+										  from xLeft in leftLookup[key].DefaultIfEmpty()
+										  from xRight in rightLookup[key].DefaultIfEmpty()
+										  select resultSelector(xLeft, xRight);
 
 			return result.ToList();
 		}
@@ -247,15 +247,15 @@ namespace EnchantedCoder.Linq
 			}
 		}
 
-	    /// <summary>
-	    /// Indikuje, zda obsahuje kolekce všechny položky jiné kolekce.
-	    /// </summary>
-	    /// <param name="source">Kolekce, v níž ověřujeme existenci hodnot.</param>
-	    /// <param name="lookupItems">Hodnoty, jejichž existenci ověřujeme v kolekci.</param>
-	    /// <returns>True, pokud source obsahuje všechny prvky lookupItems.</returns>
-	    public static bool ContainsAll<T>(this IEnumerable<T> source, IEnumerable<T> lookupItems)
-	    {
-	        return !lookupItems.Except(source).Any();
-	    }
-    }
+		/// <summary>
+		/// Indikuje, zda obsahuje kolekce všechny položky jiné kolekce.
+		/// </summary>
+		/// <param name="source">Kolekce, v níž ověřujeme existenci hodnot.</param>
+		/// <param name="lookupItems">Hodnoty, jejichž existenci ověřujeme v kolekci.</param>
+		/// <returns>True, pokud source obsahuje všechny prvky lookupItems.</returns>
+		public static bool ContainsAll<T>(this IEnumerable<T> source, IEnumerable<T> lookupItems)
+		{
+			return !lookupItems.Except(source).Any();
+		}
+	}
 }

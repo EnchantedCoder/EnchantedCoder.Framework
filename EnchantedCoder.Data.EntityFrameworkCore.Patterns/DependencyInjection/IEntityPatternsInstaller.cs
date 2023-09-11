@@ -1,8 +1,8 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Lookups;
+﻿using System;
+using System.Reflection;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Lookups;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
-using System;
-using System.Reflection;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.DependencyInjection
 {

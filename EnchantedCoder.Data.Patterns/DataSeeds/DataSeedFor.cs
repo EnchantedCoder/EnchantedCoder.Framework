@@ -16,9 +16,9 @@ namespace EnchantedCoder.Data.Patterns.DataSeeds
 		/// </summary>
 		public DataSeedConfiguration<TEntity> Configuration { get; private set; }
 
-		#pragma warning disable SA1300 // Element must begin with upper-case letter
+#pragma warning disable SA1300 // Element must begin with upper-case letter
 		internal Dictionary<string, object> _childDataForsRegistry { get; private set; } = new Dictionary<string, object>();
-		#pragma warning restore SA1300 // Element must begin with upper-case letter
+#pragma warning restore SA1300 // Element must begin with upper-case letter
 
 		/// <summary>
 		/// Konstuktor.

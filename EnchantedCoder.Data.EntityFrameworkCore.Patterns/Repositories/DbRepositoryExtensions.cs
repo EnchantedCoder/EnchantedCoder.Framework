@@ -1,12 +1,12 @@
-﻿using EnchantedCoder.Data.Patterns.Exceptions;
-using EnchantedCoder.Data.Patterns.Repositories;
-using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using EnchantedCoder.Data.Patterns.Exceptions;
+using EnchantedCoder.Data.Patterns.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Repositories
 {

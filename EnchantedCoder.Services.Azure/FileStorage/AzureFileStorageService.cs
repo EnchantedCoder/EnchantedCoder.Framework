@@ -1,3 +1,9 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Threading;
+using System.Threading.Tasks;
 using Azure;
 using Azure.Storage.Files.Shares;
 using Azure.Storage.Files.Shares.Models;
@@ -5,12 +11,6 @@ using EnchantedCoder.Diagnostics.Contracts;
 using EnchantedCoder.Services.Azure.FileStorage.Internal;
 using EnchantedCoder.Services.FileStorage;
 using EnchantedCoder.Text.RegularExpressions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace EnchantedCoder.Services.Azure.FileStorage
 {

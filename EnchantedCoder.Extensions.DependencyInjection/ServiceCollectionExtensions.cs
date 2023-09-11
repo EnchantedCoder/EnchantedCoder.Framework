@@ -1,12 +1,12 @@
-using EnchantedCoder.Diagnostics.Contracts;
-using EnchantedCoder.Extensions.DependencyInjection.Abstractions;
-using EnchantedCoder.Extensions.DependencyInjection.Scanners;
-using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using EnchantedCoder.Diagnostics.Contracts;
+using EnchantedCoder.Extensions.DependencyInjection.Abstractions;
+using EnchantedCoder.Extensions.DependencyInjection.Scanners;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace EnchantedCoder.Extensions.DependencyInjection
 {

@@ -1,7 +1,7 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DependencyInjection.Caching;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DependencyInjection.Caching;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.DependencyInjection
 {

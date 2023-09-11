@@ -4,20 +4,20 @@ using System.Text;
 
 namespace EnchantedCoder.GoogleAnalytics.ValueSerializers
 {
-    internal class BooleanValueSerializer : IValueSerializer
-    {
-        public bool CanSerialize(object value)
-        {
-            return value is bool;
-        }
+	internal class BooleanValueSerializer : IValueSerializer
+	{
+		public bool CanSerialize(object value)
+		{
+			return value is bool;
+		}
 
-        public string Serialize(object value)
-        {
-            return (bool)value switch
-            {
-                true => "1",
-                false => "0"
-            };
-        }
-    }
+		public string Serialize(object value)
+		{
+			return (bool)value switch
+			{
+				true => "1",
+				false => "0"
+			};
+		}
+	}
 }

@@ -1,9 +1,9 @@
 using System;
-using System.Text;
 using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Text;
 using System.Text.RegularExpressions;
 using EnchantedCoder.Text.RegularExpressions;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.Tests.Text
 {

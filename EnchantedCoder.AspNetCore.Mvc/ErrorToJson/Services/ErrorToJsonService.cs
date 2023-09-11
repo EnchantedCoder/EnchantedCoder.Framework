@@ -1,9 +1,9 @@
-﻿using EnchantedCoder.AspNetCore.Mvc.ErrorToJson.Configuration;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EnchantedCoder.AspNetCore.Mvc.ErrorToJson.Configuration;
 
 namespace EnchantedCoder.AspNetCore.Mvc.ErrorToJson.Services
 {

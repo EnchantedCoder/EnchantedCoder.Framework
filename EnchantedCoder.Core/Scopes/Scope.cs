@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Diagnostics;
+using System.Text;
 using EnchantedCoder.Diagnostics.Contracts;
 
 namespace EnchantedCoder.Scopes
@@ -14,13 +14,13 @@ namespace EnchantedCoder.Scopes
 	/// <code>
 	/// using (new Scope&lt;IdentityMap&gt;(new IdentityMap()))
 	/// {
-    ///		Console.WriteLine(Scope.Current.SomeMethod("outer scope"));
+	///		Console.WriteLine(Scope.Current.SomeMethod("outer scope"));
 	///
-    ///		using (new Scope&lt;IdentityMap&gt;(new IdentityMap()))
+	///		using (new Scope&lt;IdentityMap&gt;(new IdentityMap()))
 	///		{
-    ///			Console.WriteLine(Scope.Current.SomeMethod("inner scope"));
+	///			Console.WriteLine(Scope.Current.SomeMethod("inner scope"));
 	///		}
-    ///
+	///
 	///		Console.WriteLine(Scope.Current.SomeMethod("inner scope"));
 	///	}
 	/// </code>
@@ -48,10 +48,10 @@ namespace EnchantedCoder.Scopes
 		/// </summary>
 		private bool disposed;
 
-        /// <summary>
-        /// Indikuje, zdali je instance scopem vlastněná, tj. máme-li ji na konci scope disposovat.
-        /// </summary>
-        private readonly bool ownsInstance;
+		/// <summary>
+		/// Indikuje, zdali je instance scopem vlastněná, tj. máme-li ji na konci scope disposovat.
+		/// </summary>
+		private readonly bool ownsInstance;
 
 		/// <summary>
 		/// Instance, kterou scope obaluje.

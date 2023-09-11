@@ -1,5 +1,3 @@
-using EnchantedCoder.Data.Patterns.Repositories;
-using EnchantedCoder.Model.Localizations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +6,8 @@ using System.Threading.Tasks;
 using EnchantedCoder.Data.Patterns.DataEntries;
 using EnchantedCoder.Data.Patterns.Infrastructure;
 using EnchantedCoder.Data.Patterns.Localizations.Internal;
+using EnchantedCoder.Data.Patterns.Repositories;
+using EnchantedCoder.Model.Localizations;
 
 namespace EnchantedCoder.Data.Patterns.Localizations
 {

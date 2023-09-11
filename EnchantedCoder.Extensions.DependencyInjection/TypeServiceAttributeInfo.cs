@@ -1,9 +1,9 @@
-﻿using EnchantedCoder.Extensions.DependencyInjection.Abstractions;
-using Microsoft.Extensions.DependencyInjection;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
+using EnchantedCoder.Extensions.DependencyInjection.Abstractions;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace EnchantedCoder.Extensions.DependencyInjection
 {

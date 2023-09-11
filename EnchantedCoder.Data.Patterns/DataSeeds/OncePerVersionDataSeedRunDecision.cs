@@ -30,14 +30,14 @@ namespace EnchantedCoder.Data.Patterns.DataSeeds
 		/// </summary>
 		protected internal string GetState(List<Type> dataSeedTypes)
 		{
-		    return String.Join(",", dataSeedTypes.Select(item => item.Assembly).Distinct().OrderBy(item => item.FullName).Select(assembly =>
-		        String.Join("|", assembly.GetName().Name, System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location).ProductVersion, new System.IO.FileInfo(assembly.Location).LastWriteTimeUtc.ToString("O"))));
+			return String.Join(",", dataSeedTypes.Select(item => item.Assembly).Distinct().OrderBy(item => item.FullName).Select(assembly =>
+				String.Join("|", assembly.GetName().Name, System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location).ProductVersion, new System.IO.FileInfo(assembly.Location).LastWriteTimeUtc.ToString("O"))));
 		}
 
-        /// <summary>
-        /// Vrací true, pokud persister obsahuje jinou hodnotu než aktuální stav.
-        /// </summary>
-        public bool ShouldSeedData(IDataSeedProfile profile, List<Type> dataSeedTypes)
+		/// <summary>
+		/// Vrací true, pokud persister obsahuje jinou hodnotu než aktuální stav.
+		/// </summary>
+		public bool ShouldSeedData(IDataSeedProfile profile, List<Type> dataSeedTypes)
 		{
 			return GetState(dataSeedTypes) != dataSeedRunDecisionStatePersister.ReadCurrentState(profile.ProfileName);
 		}

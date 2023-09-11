@@ -1,6 +1,6 @@
 ﻿using System.Linq;
-using Hangfire;
 using EnchantedCoder.Diagnostics.Contracts;
+using Hangfire;
 using Microsoft.Extensions.Logging;
 
 namespace EnchantedCoder.Hangfire.Extensions.RecurringJobs.Services;

@@ -5,11 +5,11 @@ namespace EnchantedCoder.AspNetCore.ExceptionMonitoring.Formatters
 	/// <summary>
 	/// Formatter výjimky.
 	/// </summary>
-    public interface IExceptionFormatter
-    {
+	public interface IExceptionFormatter
+	{
 		/// <summary>
 		/// Vrátí text reprezentující lidsky čitelné informace o výjimce.
 		/// </summary>
-        string FormatException(Exception exception);
-    }
+		string FormatException(Exception exception);
+	}
 }

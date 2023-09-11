@@ -1,11 +1,11 @@
-﻿using Azure.Identity;
+﻿using System;
+using Azure.Identity;
 using Microsoft.Extensions.Configuration;
-using System;
 
 namespace EnchantedCoder.Services.Sftp.Tests.FileStorage.Infrastructure
 {
-    public static class SftpPasswordHelper
-    {
+	public static class SftpPasswordHelper
+	{
 		public static string GetPasswordForPrimaryAccount() => GetPassword("Sftp:Primary:Password");
 		public static string GetPasswordForSecondaryAccount() => GetPassword("Sftp:Secondary:Password");
 

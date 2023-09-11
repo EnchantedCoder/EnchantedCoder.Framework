@@ -6,19 +6,19 @@ using System.Text;
 
 namespace EnchantedCoder.GoogleAnalytics.Measurements.Transactions
 {
-    internal class MeasurementTransactionItemValidator : GoogleAnalyticsMeasurementValidatorBase<MeasurementTransactionItem>
-    {
-        public void Validate(MeasurementTransactionItem model)
-        {
-            List<GoogleAnalyticsValidationResult> validationResults = ValidateInternal(model).ToList();
+	internal class MeasurementTransactionItemValidator : GoogleAnalyticsMeasurementValidatorBase<MeasurementTransactionItem>
+	{
+		public void Validate(MeasurementTransactionItem model)
+		{
+			List<GoogleAnalyticsValidationResult> validationResults = ValidateInternal(model).ToList();
 
-            if (validationResults.Any())
-            {
-                string message = "Error occured while validating values for Google Analytics transaction item request" + Environment.NewLine;
-                message += String.Join(Environment.NewLine, validationResults.Select(x => x.ToString()));
+			if (validationResults.Any())
+			{
+				string message = "Error occured while validating values for Google Analytics transaction item request" + Environment.NewLine;
+				message += String.Join(Environment.NewLine, validationResults.Select(x => x.ToString()));
 
-                throw new ValidationException(message);
-            }
-        }
-    }
+				throw new ValidationException(message);
+			}
+		}
+	}
 }

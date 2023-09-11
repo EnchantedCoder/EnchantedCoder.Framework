@@ -1,9 +1,9 @@
-﻿using EnchantedCoder.Services.Sftp.FileStorage;
-using Renci.SshNet;
-using System;
+﻿using System;
 using System.IO;
 using System.Linq;
 using System.Threading;
+using EnchantedCoder.Services.Sftp.FileStorage;
+using Renci.SshNet;
 
 namespace TestConsoleApp
 {

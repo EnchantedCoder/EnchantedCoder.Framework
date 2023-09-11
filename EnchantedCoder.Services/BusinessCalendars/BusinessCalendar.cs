@@ -1,7 +1,7 @@
-using EnchantedCoder.Services.TimeServices;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using EnchantedCoder.Services.TimeServices;
 
 namespace EnchantedCoder.Services.BusinessCalendars
 {

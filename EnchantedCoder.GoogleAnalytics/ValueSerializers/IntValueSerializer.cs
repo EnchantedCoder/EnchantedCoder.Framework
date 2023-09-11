@@ -5,17 +5,17 @@ using System.Text;
 
 namespace EnchantedCoder.GoogleAnalytics.ValueSerializers
 {
-    internal class IntValueSerializer : IValueSerializer
-    {
-        public bool CanSerialize(object value)
-        {
-            return value is int;
-        }
+	internal class IntValueSerializer : IValueSerializer
+	{
+		public bool CanSerialize(object value)
+		{
+			return value is int;
+		}
 
-        public string Serialize(object value)
-        {
-            int intValue = (int)value;
-            return intValue.ToString("D", CultureInfo.InvariantCulture);
-        }
-    }
+		public string Serialize(object value)
+		{
+			int intValue = (int)value;
+			return intValue.ToString("D", CultureInfo.InvariantCulture);
+		}
+	}
 }

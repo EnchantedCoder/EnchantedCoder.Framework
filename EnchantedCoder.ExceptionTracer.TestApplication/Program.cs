@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
-using EnchantedCoder.Diagnostics;
-using System.Diagnostics;
 using System.Threading.Tasks;
+using EnchantedCoder.Diagnostics;
 
 namespace TracingTest
 {

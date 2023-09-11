@@ -1,3 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataSeeds;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataSeeds.Internal;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DependencyInjection;
@@ -9,11 +14,6 @@ using EnchantedCoder.Services.TimeServices;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.DataSeeds
 {

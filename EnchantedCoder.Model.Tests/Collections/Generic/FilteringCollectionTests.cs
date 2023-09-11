@@ -1,9 +1,9 @@
-﻿using EnchantedCoder.Model.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using EnchantedCoder.Model.Collections.Generic;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.Model.Tests.Collections.Generic
 {

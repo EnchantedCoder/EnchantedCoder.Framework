@@ -1,4 +1,11 @@
-﻿using EnchantedCoder.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics.Tracing;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Reflection;
+using System.Text;
+using EnchantedCoder.Collections.Generic;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.SoftDeletes;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.UnitOfWorks;
 using EnchantedCoder.Data.Patterns.DataSources;
@@ -10,13 +17,6 @@ using EnchantedCoder.Linq.Expressions;
 using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.EntityFrameworkCore.Query.Internal;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.Tracing;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Reflection;
-using System.Text;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Lookups
 {

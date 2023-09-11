@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer.ExtendedProperties;
 using EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer.Attributes.ExtendedProperties;
+using EnchantedCoder.Data.EntityFrameworkCore.BusinessLayer.ExtendedProperties;
 using EnchantedCoder.Diagnostics.Contracts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;

@@ -4,16 +4,16 @@ using System.Text;
 
 namespace EnchantedCoder.GoogleAnalytics.ValueSerializers
 {
-    internal class StringValueSerializer : IValueSerializer
-    {
-        public bool CanSerialize(object value)
-        {
-            return value is string;
-        }
+	internal class StringValueSerializer : IValueSerializer
+	{
+		public bool CanSerialize(object value)
+		{
+			return value is string;
+		}
 
-        public string Serialize(object value)
-        {
-            return (string)value;
-        }
-    }
+		public string Serialize(object value)
+		{
+			return (string)value;
+		}
+	}
 }

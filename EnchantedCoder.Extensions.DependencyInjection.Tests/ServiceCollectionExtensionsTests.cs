@@ -1,11 +1,11 @@
-﻿using EnchantedCoder.Extensions.DependencyInjection.Tests.Infrastructure;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EnchantedCoder.Extensions.DependencyInjection.Tests.Infrastructure;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.Extensions.DependencyInjection.Tests
 {

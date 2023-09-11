@@ -16,10 +16,10 @@ using EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator.Actions.ModelMetadat
 using EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator.Actions.Repositories;
 using EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator.Actions.Repositories.Model;
 using EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator.Actions.Repositories.Templates;
-using EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator.Services;
-using Microsoft.EntityFrameworkCore.Design;
-using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
 using EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator.Configuration;
+using EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator.Services;
+using EnchantedCoder.Data.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Design;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.CodeGenerator
 {

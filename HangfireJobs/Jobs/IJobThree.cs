@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EnchantedCoder.HangfireJobs.Jobs
 {
-    public interface IJobThree : IRunnableJob
-    {
-    }
+	public interface IJobThree : IRunnableJob
+	{
+	}
 }

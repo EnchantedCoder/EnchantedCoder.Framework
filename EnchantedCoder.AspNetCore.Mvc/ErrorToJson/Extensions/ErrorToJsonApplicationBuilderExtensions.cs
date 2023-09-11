@@ -1,12 +1,12 @@
-﻿using EnchantedCoder.AspNetCore.ExceptionMonitoring.Middlewares;
-using EnchantedCoder.AspNetCore.Mvc.ErrorToJson.Middlewares;
-using EnchantedCoder.Diagnostics.Contracts;
-using Microsoft.AspNetCore.Builder;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EnchantedCoder.AspNetCore.ExceptionMonitoring.Middlewares;
+using EnchantedCoder.AspNetCore.Mvc.ErrorToJson.Middlewares;
+using EnchantedCoder.Diagnostics.Contracts;
+using Microsoft.AspNetCore.Builder;
 
 // Správný namespace je Microsoft.AspNetCore.Builder!
 

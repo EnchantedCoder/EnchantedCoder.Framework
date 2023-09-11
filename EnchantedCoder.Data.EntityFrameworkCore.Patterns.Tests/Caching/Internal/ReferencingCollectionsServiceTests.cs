@@ -1,13 +1,13 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching.Internal;
-using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.Caching.Infrastructure;
-using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.Caching.Infrastructure.Model;
-using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.Caching.Infrastructure.Model.OneToOne;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching.Internal;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.Caching.Infrastructure;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.Caching.Infrastructure.Model;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.Caching.Infrastructure.Model.OneToOne;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.Tests.Caching.Internal
 {

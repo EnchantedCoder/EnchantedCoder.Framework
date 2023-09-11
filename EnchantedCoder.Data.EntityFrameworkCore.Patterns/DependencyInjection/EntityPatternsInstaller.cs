@@ -1,4 +1,9 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.Caching.Internal;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataLoaders;
 using EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataLoaders.Internal;
@@ -30,11 +35,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.DependencyInjection
 {

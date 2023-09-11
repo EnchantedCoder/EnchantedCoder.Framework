@@ -1,13 +1,13 @@
-﻿using Hangfire;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using EnchantedCoder.Diagnostics.Contracts;
+using Hangfire;
 using Hangfire.Client;
 using Hangfire.Common;
 using Hangfire.Server;
 using Hangfire.States;
 using Hangfire.Storage;
-using EnchantedCoder.Diagnostics.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace EnchantedCoder.Hangfire.Extensions.Filters;
 

@@ -5,10 +5,10 @@ using EnchantedCoder.GoogleAnalytics.Measurements;
 
 namespace EnchantedCoder.GoogleAnalytics.Tests.Measurements
 {
-    internal class FakeGoogleAnalyticsMeasurementApiConfiguration : IGoogleAnalyticsMeasurementApiConfiguration
-    {
-        public string MeasurementEndpointUrl => "fakegaendpoint";
+	internal class FakeGoogleAnalyticsMeasurementApiConfiguration : IGoogleAnalyticsMeasurementApiConfiguration
+	{
+		public string MeasurementEndpointUrl => "fakegaendpoint";
 
-        public string GoogleAnalyticsTrackingId => "UA-FAKE";
-    }
+		public string GoogleAnalyticsTrackingId => "UA-FAKE";
+	}
 }

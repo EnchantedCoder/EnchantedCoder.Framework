@@ -1,8 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Text;
+﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using EnchantedCoder.Security;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EnchantedCoder.Tests.Security
 {

@@ -1,4 +1,5 @@
-﻿using EnchantedCoder.Data.EntityFrameworkCore.Tests.Infrastructure.Configurations;
+﻿using System;
+using EnchantedCoder.Data.EntityFrameworkCore.Tests.Infrastructure.Configurations;
 using EnchantedCoder.Data.EntityFrameworkCore.Tests.Infrastructure.Entity;
 using EnchantedCoder.Data.EntityFrameworkCore.Tests.Infrastructure.Model;
 using Microsoft.EntityFrameworkCore;
@@ -8,7 +9,6 @@ using Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using System;
 
 namespace EnchantedCoder.Data.EntityFrameworkCore.Tests
 {

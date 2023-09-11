@@ -445,6 +445,7 @@ namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataSeeds
 			if (_currentDbContext == null)
 			{
 				using (var dbContext = dbContextFactory.CreateDbContext())
+				{
 					try
 					{
 						_currentDbContext = dbContext;
@@ -454,6 +455,7 @@ namespace EnchantedCoder.Data.EntityFrameworkCore.Patterns.DataSeeds
 					{
 						_currentDbContext = null;
 					}
+				}
 			}
 			else
 			{
