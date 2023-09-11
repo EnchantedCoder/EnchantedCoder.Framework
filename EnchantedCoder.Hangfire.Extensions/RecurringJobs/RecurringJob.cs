@@ -57,9 +57,12 @@ public class RecurringJob<TJob> : IRecurringJob
 	}
 
 	/// <inheritdoc />
-	public void ScheduleAsRecurringJob(IRecurringJobManager recurringJobManager)
+		public void ScheduleAsRecurringJob(IRecurringJobManager recurringJobManager)
 	{
-		recurringJobManager.AddOrUpdate<TJob>(JobId, MethodCall, CronExpression, TimeZone, Queue);
+		recurringJobManager.AddOrUpdate<TJob>(JobId, Queue, MethodCall, CronExpression, new RecurringJobOptions
+		{
+			TimeZone = TimeZone
+		});
 	}
 
 	/// <inheritdoc />
