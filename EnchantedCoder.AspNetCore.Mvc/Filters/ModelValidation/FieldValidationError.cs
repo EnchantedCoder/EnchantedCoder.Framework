@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace EnchantedCoder.AspNetCore.Mvc.Filters.ModelValidation
 {
@@ -17,7 +17,7 @@ namespace EnchantedCoder.AspNetCore.Mvc.Filters.ModelValidation
 		/// <remarks>
 		/// Vracené fields jsou PascalCase - vychází z pojmenování v .NETu, nikoliv z pojmenování použitého JSON formatterem.
 		/// </remarks>
-		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+		[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
 		public string Field { get; }
 
 		/// <summary>
